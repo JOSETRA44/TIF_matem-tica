@@ -1,0 +1,31 @@
+<h3 id="validacion-matematica">3.4. Validación de Estabilidad del Modelo (Condiciones Hawkins-Simmons)</h3>
+<p>Para garantizar que la matriz de coeficientes técnicos sea viable económicamente y tenga una inversa no negativa, se
+    verifican las condiciones matemáticas de estabilidad espectral.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Criterio Matemático</th>
+            <th class="numeric">Valor Calculado</th>
+            <th class="numeric">Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Determinante de Leontief |I-A|</td>
+            <td class="numeric">0.7834</td>
+            <td class="numeric">✓ > 0 (Cumple)</td>
+        </tr>
+        <tr>
+            <td>Condición de no-negatividad</td>
+            <td class="numeric">Todos a<sub>ij</sub> ≥ 0</td>
+            <td class="numeric">✓ Positiva (Cumple)</td>
+        </tr>
+        <tr>
+            <td><strong>Conclusión del Modelo</strong></td>
+            <td class="numeric"><strong>Solución Única</strong></td>
+            <td class="numeric"><strong>✓ VIABLE</strong></td>
+        </tr>
+    </tbody>
+</table>
+<p class="caption">Fuente: Elaboración propia basada en los cálculos del Capítulo IV.</p>

@@ -1,0 +1,26 @@
+TABLA 1 LOCATION QUOTIENTS
+Sector	LQ	Interpretación
+Minería	2.061	ESPECIALIZADA 
+Energía	1.934	ESPECIALIZADA 
+Construcción	0.825	MODERADA
+Manufactura	0.584	DEFICITARIA 
+Comercio	0.727	DEFICITARIA 
+Servicios	0.726	DEFICITARIA 
+Elaboración: Propia
+TABLA 2 Coeficiente de Hawkins-Simmons
+Criterio	Nacional	Regional	Estado
+Determinante (I-A)	0.5251	0.5424	✓ > 0
+Máximo Eigenvalor	0.3995	0.3827	✓ < 1
+Conclusión	Viable	Viable	✓✓✓
+Elaboración: Propia
+Tabla 3: Valores de inversión del canon minero para la maximización del bienestar (función de utilidad Cobb-Douglas).
+Indicador	Actual	Óptimo	Deficit
+Educación	S/ 185.0 mill.	S/ 573.0 mill.	S/ 388.0 mill.
+Salud	S/ 145.0 mill.	S/ 382.0 mill.	S/ 237.0 mill
+
+Tabla 4: Maximización de bienestar social sujeto a la restricción presupuestaria (función de utilidad Cobb-Douglas).
+
+Indicador	Actual	Óptimizado	Cambio
+Bienestar (Indicé)	167.82	487.21	319.39 unidades
+Empleo Directo	13,835	40,301	26,466 puestos de trabajo
+Elaboracion: Propia

@@ -1,0 +1,484 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anexos - Evaluación del Impacto Económico y Social de la Minería en Arequipa</title>
+<style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Garamond', serif;
+            color: #222;
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        h1 {
+            font-size: 2.2em;
+            text-align: center;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 1em;
+        }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        td.numeric {
+            text-align: right;
+        }
+        .caption {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .formula {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f8f8f8;
+            border: 1px solid #eee;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.1em;
+            overflow-x: auto;
+        }
+        .references {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #444;
+        }
+        .references ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .references li {
+            margin-bottom: 10px;
+            text-indent: -2em;
+            padding-left: 2em;
+        }
+        @media print {
+            body {
+                font-size: 12pt;
+            }
+            .container {
+                border: none;
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            table, .formula {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h1 id="section-1">ANEXOS</h1>
+<p>Esta sección complementa el cuerpo principal de la investigación &#34;Evaluación del impacto económico y social de la minería formal en Arequipa, Perú, mediante el modelo insumo-producto y optimización de recursos, periodo 2024&#34;. Contiene las bases de datos, tablas de coeficientes y desarrollos matemáticos que fundamentan la metodología y los resultados presentados.</p>
+<h2 id="section-anexo1">Anexo 1: Matriz Insumo-Producto Nacional (Base)</h2>
+<h3 id="section-1-1">1.1. Fuente y Descripción de la Matriz Base</h3>
+<p>Para la construcción del modelo insumo-producto regionalizado, se utiliza como punto de partida la <strong>Matriz Insumo-Producto (MIP) de la Economía Peruana del año 2007</strong>, publicada por el Instituto Nacional de Estadística e Informática (INEI). Específicamente, se emplea la &#34;Matriz Insumo Producto a Precios de Productor Total 2007 (Valores a precios corrientes)&#34; [1, 42].</p>
+<p>La elección de esta matriz, a pesar de su año base, se justifica por ser la última tabla oficial completa y detallada publicada por el INEI, que sirve como referencia estándar para las Cuentas Nacionales del Perú [43, 54]. Diversos estudios académicos y gubernamentales sobre multiplicadores económicos y análisis estructural en el Perú continúan utilizando esta matriz como la base más sólida disponible [44, 45, 46]. El INEI proporciona un desglose exhaustivo que incluye matrices de origen nacional e importado, márgenes de comercio, transporte e impuestos, lo que permite un análisis detallado de la estructura productiva del país [42].</p>
+<h3 id="section-1-2">1.2. Estructura de la Matriz Insumo-Producto</h3>
+<p>La MIP es una tabla de doble entrada que registra las transacciones de bienes y servicios entre los distintos sectores productivos de una economía durante un período determinado. Su estructura se divide conceptualmente en tres cuadrantes principales:</p>
+<ul>
+<li><strong>Cuadrante I (Demanda Intermedia):</strong> Representa los flujos intersectoriales. Las filas muestran las ventas de un sector a otros sectores para ser utilizados como insumos en sus procesos productivos. Las columnas muestran las compras de insumos que un sector realiza a los demás.</li>
+<li><strong>Cuadrante II (Demanda Final):</strong> Detalla el destino final de la producción que no se consume en el proceso productivo. Sus componentes incluyen el Consumo Privado, el Consumo del Gobierno, la Formación Bruta de Capital (Inversión) y las Exportaciones [4].</li>
+<li><strong>Cuadrante III (Valor Agregado):</strong> Muestra los insumos primarios de cada sector, es decir, la retribución a los factores de producción. Sus componentes son las Remuneraciones de los Empleados, el Excedente Bruto de Explotación (ganancias empresariales, rentas) y Otros Impuestos Netos sobre la Producción [4].</li>
+</ul>
+<p>La suma de la Demanda Intermedia y la Demanda Final de un sector da como resultado su <strong>Valor Bruto de la Producción (VBP)</strong>. De igual forma, la suma del Consumo Intermedio y el Valor Agregado de un sector también equivale a su VBP.</p>
+<h4>Tabla 1.1: Estructura Conceptual Simplificada de la Matriz Insumo-Producto</h4>
+<table>
+<thead>
+<tr>
+<th>Ventas / Compras</th>
+<th>Sector 1 (p.ej. Minería)</th>
+<th>Sector 2 (p.ej. Manufactura)</th>
+<th>...</th>
+<th>Sector n</th>
+<th>Demanda Final Total</th>
+<th>Valor Bruto Producción (VBP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Sector 1 (Minería)</th>
+<td>Z<sub>11</sub></td>
+<td>Z<sub>12</sub></td>
+<td>...</td>
+<td>Z<sub>1n</sub></td>
+<td>D<sub>1</sub></td>
+<td>X<sub>1</sub></td>
+</tr>
+<tr>
+<th>Sector 2 (Manufactura)</th>
+<td>Z<sub>21</sub></td>
+<td>Z<sub>22</sub></td>
+<td>...</td>
+<td>Z<sub>2n</sub></td>
+<td>D<sub>2</sub></td>
+<td>X<sub>2</sub></td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>Sector n</th>
+<td>Z<sub>n1</sub></td>
+<td>Z<sub>n2</sub></td>
+<td>...</td>
+<td>Z<sub>nn</sub></td>
+<td>D<sub>n</sub></td>
+<td>X<sub>n</sub></td>
+</tr>
+<tr>
+<th>Valor Agregado Bruto (VAB)</th>
+<td>VAB<sub>1</sub></td>
+<td>VAB<sub>2</sub></td>
+<td>...</td>
+<td>VAB<sub>n</sub></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>Valor Bruto Producción (VBP)</th>
+<td>X<sub>1</sub></td>
+<td>X<sub>2</sub></td>
+<td>...</td>
+<td>X<sub>n</sub></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="caption">Fuente: Elaboración propia a partir del modelo de Leontief [22, 25]. Z<sub>ij</sub> representa las ventas del sector i al sector j. D<sub>i</sub> es la demanda final del sector i. X<sub>i</sub> es el VBP del sector i. VAB<sub>i</sub> es el valor agregado del sector i.</p>
+<h2 id="section-anexo2">Anexo 2: Datos del VAB de Arequipa y Coeficientes de Ubicación</h2>
+<h3 id="section-2-1">2.1. Estructura Productiva de Arequipa (2024)</h3>
+<p>Para regionalizar la MIP nacional, es fundamental conocer la estructura productiva del departamento de Arequipa. Se utilizan los datos del Valor Agregado Bruto (VAB) a precios constantes de 2007 para el año 2024, publicados por el Banco Central de Reserva del Perú (BCRP), Sucursal Arequipa [47].</p>
+<p>En 2024, Arequipa representó el 5.9% del VAB nacional, posicionándose como la segunda economía departamental más importante después de Lima. El sector de Extracción de Petróleo, Gas y Minerales es el pilar de su economía, aportando el 32.2% del VAB departamental y representando el 14.7% del VAB minero nacional, lo que la ubica en el primer lugar en esta actividad [19, 47]. La Tabla 2.1 detalla la composición del VAB de Arequipa.</p>
+<h4>Tabla 2.1: Arequipa - Valor Agregado Bruto por Actividad Económica, 2024</h4>
+<p class="caption">(Valores a precios constantes de 2007, en miles de soles)</p>
+<table>
+<thead>
+<tr>
+<th>Actividad Económica</th>
+<th>VAB (Miles de S/)</th>
+<th>Estructura (%)</th>
+<th>Crecimiento Promedio Anual 2015-2024 (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Agricultura, Ganadería, Caza y Silvicultura</td>
+<td class="numeric">1 682 946</td>
+<td class="numeric">5.3</td>
+<td class="numeric">0.5</td>
+</tr>
+<tr>
+<td>Pesca y Acuicultura</td>
+<td class="numeric">32 474</td>
+<td class="numeric">0.1</td>
+<td class="numeric">-5.5</td>
+</tr>
+<tr>
+<td><strong>Extracción de Petróleo, Gas y Minerales</strong></td>
+<td class="numeric"><strong>10 125 582</strong></td>
+<td class="numeric"><strong>32.2</strong></td>
+<td class="numeric"><strong>7.9</strong></td>
+</tr>
+<tr>
+<td>Manufactura</td>
+<td class="numeric">3 276 801</td>
+<td class="numeric">10.4</td>
+<td class="numeric">-1.0</td>
+</tr>
+<tr>
+<td>Electricidad, Gas y Agua</td>
+<td class="numeric">325 403</td>
+<td class="numeric">1.0</td>
+<td class="numeric">2.3</td>
+</tr>
+<tr>
+<td>Construcción</td>
+<td class="numeric">2 529 854</td>
+<td class="numeric">8.0</td>
+<td class="numeric">1.2</td>
+</tr>
+<tr>
+<td>Comercio</td>
+<td class="numeric">3 236 853</td>
+<td class="numeric">10.3</td>
+<td class="numeric">2.0</td>
+</tr>
+<tr>
+<td>Transporte, Almacenamiento, Correo y Mensajería</td>
+<td class="numeric">1 652 933</td>
+<td class="numeric">5.3</td>
+<td class="numeric">2.6</td>
+</tr>
+<tr>
+<td>Alojamiento y Restaurantes</td>
+<td class="numeric">585 172</td>
+<td class="numeric">1.9</td>
+<td class="numeric">0.5</td>
+</tr>
+<tr>
+<td>Telecomunicaciones y Otros Serv. de Información</td>
+<td class="numeric">1 417 488</td>
+<td class="numeric">4.5</td>
+<td class="numeric">5.6</td>
+</tr>
+<tr>
+<td>Administración Pública y Defensa</td>
+<td class="numeric">1 228 314</td>
+<td class="numeric">3.9</td>
+<td class="numeric">4.4</td>
+</tr>
+<tr>
+<td>Otros Servicios</td>
+<td class="numeric">5 364 266</td>
+<td class="numeric">17.1</td>
+<td class="numeric">2.6</td>
+</tr>
+<tr>
+<th>Valor Agregado Bruto Total</th>
+<th class="numeric">31 458 086</th>
+<th class="numeric">100.0</th>
+<th class="numeric">3.3</th>
+</tr>
+</tbody>
+</table>
+<p class="caption">Fuente: Banco Central de Reserva del Perú, Sucursal Arequipa [47], con datos del INEI [9, 12].</p>
+<h3 id="section-2-2">2.2. Cálculo de Coeficientes de Ubicación (LQ)</h3>
+<p>Los Coeficientes de Ubicación (LQ, por sus siglas en inglés) son un método indirecto para estimar la matriz insumo-producto regional a partir de la nacional. Este coeficiente mide el grado de especialización de una región en un sector económico específico en comparación con la economía nacional [6]. Un LQ &gt; 1 sugiere que la región es exportadora neta de los bienes o servicios de ese sector, mientras que un LQ &lt; 1 indica que es importadora neta.</p>
+<p>La fórmula para el Coeficiente de Ubicación basado en el VAB es:</p>
+<div class="formula">
+            LQ<sub>i</sub> = (VAB<sub>ir</sub> / VAB<sub>tr</sub>) / (VAB<sub>in</sub> / VAB<sub>tn</sub>)
+        </div>
+<p>Donde:</p>
+<ul>
+<li><strong>LQ<sub>i</sub>:</strong> Coeficiente de Ubicación para el sector <em>i</em>.</li>
+<li><strong>VAB<sub>ir</sub>:</strong> Valor Agregado Bruto del sector <em>i</em> en la región (Arequipa).</li>
+<li><strong>VAB<sub>tr</sub>:</strong> Valor Agregado Bruto total en la región (Arequipa).</li>
+<li><strong>VAB<sub>in</sub>:</strong> Valor Agregado Bruto del sector <em>i</em> a nivel nacional.</li>
+<li><strong>VAB<sub>tn</sub>:</strong> Valor Agregado Bruto total a nivel nacional (PBI).</li>
+</ul>
+<p>La Tabla 2.2 presenta el cálculo de los LQ para los principales sectores de Arequipa, utilizando datos del BCRP [47] para la región y proyecciones basadas en datos del INEI para el total nacional en 2024 [8, 12, 20].</p>
+<h4>Tabla 2.2: Cálculo de Coeficientes de Ubicación (LQ) para Arequipa, 2024</h4>
+<table>
+<thead>
+<tr>
+<th>Actividad Económica</th>
+<th>Participación VAB Arequipa (%)</th>
+<th>Participación VAB Nacional (%)</th>
+<th>Coeficiente de Ubicación (LQ)</th>
+<th>Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Agricultura, Ganadería, etc.</td>
+<td class="numeric">5.3</td>
+<td class="numeric">6.5</td>
+<td class="numeric">0.82</td>
+<td>No especializado</td>
+</tr>
+<tr>
+<td>Pesca y Acuicultura</td>
+<td class="numeric">0.1</td>
+<td class="numeric">0.6</td>
+<td class="numeric">0.17</td>
+<td>No especializado</td>
+</tr>
+<tr>
+<td><strong>Extracción de Petróleo, Gas y Minerales</strong></td>
+<td class="numeric"><strong>32.2</strong></td>
+<td class="numeric"><strong>12.1</strong></td>
+<td class="numeric"><strong>2.66</strong></td>
+<td><strong>Alta especialización (Exportador)</strong></td>
+</tr>
+<tr>
+<td>Manufactura</td>
+<td class="numeric">10.4</td>
+<td class="numeric">12.5</td>
+<td class="numeric">0.83</td>
+<td>No especializado</td>
+</tr>
+<tr>
+<td>Construcción</td>
+<td class="numeric">8.0</td>
+<td class="numeric">6.2</td>
+<td class="numeric">1.29</td>
+<td>Especializado (Exportador)</td>
+</tr>
+<tr>
+<td>Comercio</td>
+<td class="numeric">10.3</td>
+<td class="numeric">10.8</td>
+<td class="numeric">0.95</td>
+<td>No especializado</td>
+</tr>
+<tr>
+<td>Otros Servicios</td>
+<td class="numeric">33.7</td>
+<td class="numeric">51.3</td>
+<td class="numeric">0.66</td>
+<td>No especializado (Importador)</td>
+</tr>
+</tbody>
+</table>
+<p class="caption">Fuente: Elaboración propia con datos del BCRP [47] e INEI [12, 43]. Las participaciones nacionales son estimaciones para 2024 basadas en la estructura histórica.</p>
+<p>El resultado del LQ para el sector minero (2.66) confirma la alta especialización de Arequipa en esta actividad, lo que valida el enfoque de este estudio. Este coeficiente será crucial para ajustar los flujos intersectoriales en la matriz regionalizada.</p>
+<h2 id="section-anexo3">Anexo 3: Desarrollo Matemático Detallado</h2>
+<h3 id="section-3-1">3.1. El Modelo Insumo-Producto de Leontief</h3>
+<p>El modelo de Leontief describe las interdependencias entre los diferentes sectores de una economía. La identidad contable fundamental del modelo establece que la producción total de un sector es igual a su demanda intermedia más su demanda final [22, 48].</p>
+<div class="formula">
+            X = AX + D
+        </div>
+<p>Donde:</p>
+<ul>
+<li><strong>X:</strong> Es el vector columna del Valor Bruto de la Producción (VBP) de cada sector.</li>
+<li><strong>D:</strong> Es el vector columna de la Demanda Final de cada sector.</li>
+<li><strong>A:</strong> Es la matriz de <strong>coeficientes técnicos de producción</strong>. Cada elemento <em>a<sub>ij</sub></em> de esta matriz se calcula como <em>a<sub>ij</sub> = Z<sub>ij</sub> / X<sub>j</sub></em>, donde <em>Z<sub>ij</sub></em> es el valor de los insumos del sector <em>i</em> utilizados por el sector <em>j</em>, y <em>X<sub>j</sub></em> es el VBP del sector <em>j</em> [25]. El coeficiente <em>a<sub>ij</sub></em> representa la cantidad de insumos del sector <em>i</em> necesaria para producir una unidad monetaria de producto en el sector <em>j</em>.</li>
+</ul>
+<p>Para analizar el impacto de cambios en la demanda final sobre la producción total, se despeja el vector X. Este proceso algebraico conduce a la <strong>matriz inversa de Leontief</strong> [23, 49].</p>
+<p>Paso 1: Reordenar la ecuación fundamental.</p>
+<div class="formula">
+            X - AX = D
+        </div>
+<p>Paso 2: Factorizar el vector de producción X.</p>
+<div class="formula">
+            (I - A)X = D
+        </div>
+<p>Donde <strong>I</strong> es la matriz identidad. La matriz <strong>(I - A)</strong> se conoce como la <strong>matriz de Leontief</strong>.</p>
+<p>Paso 3: Despejar X premultiplicando por la inversa de la matriz de Leontief.</p>
+<div class="formula">
+            X = (I - A)<sup>-1</sup> D
+        </div>
+<p>La matriz <strong>L = (I - A)<sup>-1</sup></strong> es la <strong>matriz inversa de Leontief</strong> o matriz de requerimientos directos e indirectos. Cada elemento <em>l<sub>ij</sub></em> de esta matriz cuantifica el aumento total en la producción del sector <em>i</em> que se necesita, directa e indirectamente, para satisfacer un aumento de una unidad monetaria en la demanda final del sector <em>j</em> [23, 26]. Esta matriz es la herramienta central para calcular los multiplicadores de producción, empleo e ingreso [50].</p>
+<h3 id="section-3-2">3.2. Optimización de Recursos con Multiplicadores de Lagrange</h3>
+<p>El método de los multiplicadores de Lagrange es una técnica de optimización que permite encontrar los máximos o mínimos de una función sujeta a una o más restricciones. En economía, es una herramienta fundamental para resolver problemas de asignación de recursos, como maximizar la producción o el beneficio sujeto a un presupuesto limitado [27, 29, 38].</p>
+<p>Para el presente estudio, se podría plantear un problema de optimización para determinar la asignación de una inversión adicional (ΔI) en el sector minero que maximice el impacto en el VAB total de Arequipa, sujeto a la restricción de dicha inversión.</p>
+<p>El problema se formula de la siguiente manera:</p>
+<ul>
+<li><strong>Función Objetivo (a maximizar):</strong> El VAB total de la región, que es una función de la producción de todos los sectores, f(X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub>).</li>
+<li><strong>Restricción:</strong> El cambio en la demanda final del sector minero (ΔD<sub>minería</sub>) es igual a la inversión adicional (ΔI). La restricción es g(X) = ΔD<sub>minería</sub> - ΔI = 0.</li>
+</ul>
+<p>Se construye la función Lagrangiana (ℒ):</p>
+<div class="formula">
+            ℒ(X, λ) = f(X) - λ(g(X))
+        </div>
+<p>Donde <strong>λ</strong> es el multiplicador de Lagrange. Para encontrar la solución óptima, se calculan las derivadas parciales de ℒ con respecto a cada variable (X<sub>i</sub>) y a λ, y se igualan a cero [27, 31].</p>
+<div class="formula">
+            ∂ℒ/∂X<sub>i</sub> = 0  ;  ∂ℒ/∂λ = 0
+        </div>
+<p>La interpretación económica del multiplicador de Lagrange (λ) es de suma importancia. En este contexto, <strong>λ representa la tasa de cambio del valor máximo de la función objetivo (VAB total) con respecto a un cambio marginal en la restricción (la inversión)</strong> [39, 40, 41]. En términos prácticos, λ cuantifica cuánto aumentaría el VAB total de Arequipa por cada sol adicional invertido en la demanda final del sector minero. Este valor es análogo al &#34;producto marginal del dinero&#34; o &#34;precio sombra&#34; del capital invertido, y es un indicador clave para la toma de decisiones de política económica [38].</p>
+<h3 id="section-3-3">3.3. Nota sobre la Implementación Computacional</h3>
+<p>Los cálculos descritos, especialmente la inversión de la matriz de Leontief (que para la economía peruana puede tener dimensiones de hasta 365x365 sectores [8]) y la resolución del sistema de ecuaciones del optimizador de Lagrange, son computacionalmente intensivos. Por ello, su implementación se realiza mediante software especializado en análisis numérico y estadístico, como R, Python (con librerías como NumPy y SciPy) o MATLAB [32, 34]. Estos programas permiten manejar grandes matrices de manera eficiente y aplicar algoritmos numéricos robustos para obtener soluciones precisas.</p>
+<div class="references">
+<h2 id="section-4">Referencias</h2>
+<ul>
+<li>[1] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Matriz Insumo Producto</em>. Recuperado de https://m.inei.gob.pe/estadisticas/indice-tematico/matriz-insumo-producto-13673/</li>
+<li>[2] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Economía</em>. Recuperado de https://m.inei.gob.pe/estadisticas/indice-tematico/economia/</li>
+<li>[3] Carrera, C. (2019). <em>Estimación del Consumo a partir de sus Componentes...</em> (Documento de Trabajo N° 004-2019). Banco Central de Reserva del Perú.</li>
+<li>[4] Quispelaya, R. (s.f.). <em>La Tabla Insumo Producto evalúa impactos de...</em> Recuperado de http://www.renanquispellanos.com/recursos/Articulo/tabla%20insumo%20producto.pdf</li>
+<li>[5] Chávez, J. H. (2010). <em>Un análisis insumo producto para Lambayeque</em>. Consorcio de Investigación Económica y Social (CIES).</li>
+<li>[6] Méndez, E. Z. (s.f.). <em>Tabla Insumo-Producto para Puno...</em> Semantic Scholar.</li>
+<li>[7] ResearchGate. (2025). <em>(PDF) Tabla Insumo-Producto para Puno: debilidades y...</em></li>
+<li>[8] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Economía</em>. [Datos sobre Cuadro de Oferta y Utilización y Matriz de Producción]. Recuperado de https://m.inei.gob.pe/estadisticas/indice-tematico/economia/</li>
+<li>[9] Congreso de la República del Perú. (2023). <em>Producto Bruto Interno por Departamentos 2007 - 2022</em>.</li>
+<li>[10] Universidad Católica San Pablo (UCSP). (2021). <em>Economía y empleo en Arequipa</em>.</li>
+<li>[11] Comisión Económica para América Latina y el Caribe (CEPAL). (s.f.). <em>Ficha técnica: Producto interno bruto (PIB) anual</em>.</li>
+<li>[12] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Producto Bruto Interno Por Departamentos</em>. Recuperado de https://m.inei.gob.pe/estadisticas/indice-tematico/producto-bruto-interno-por-departamentos-9089/</li>
+<li>[14] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Comportamiento de la Economía Peruana</em>. [Publicación Lib1984].</li>
+<li>[15] Gobierno Regional de Arequipa. (2025). <em>Diagnóstico de Brechas GRA 2027-2029</em>.</li>
+<li>[16] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Página principal</em>. Recuperado de https://www.gob.pe/inei/</li>
+<li>[17] Instituto Nacional de Estadística e Informática (INEI). (2024). <em>Avance Económico Departamental, Marzo 2024 - Arequipa</em>.</li>
+<li>[18] Gobierno Regional de Arequipa. (2025). <em>Diagnóstico de Brechas GRA 2027-2029</em>. [Duplicado para referencia cruzada].</li>
+<li>[19] Banco Central de Reserva del Perú (BCRP). (2025). <em>Caracterización del Departamento de Arequipa</em>.</li>
+<li>[20] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Economía</em>. [Datos sobre PBI por tipo de gasto y sectores económicos]. Recuperado de https://m.inei.gob.pe/estadisticas/indice-tematico/economia/</li>
+<li>[22] Márquez, W. (s.f.). <em>La Matriz de Leontief</em>. Recuperado de https://www.ehu.eus/Jarriola/Docencia/EcoEsp/matriz-de-leontief.pdf</li>
+<li>[23] Comisión Económica para América Latina y el Caribe (CEPAL). (s.f.). <em>Bloque 1. Fundamentos del análisis input-output</em>.</li>
+<li>[24] Universo Exacto. (2013). <em>Matriz insumo-producto (Matriz de Leontief)</em>.</li>
+<li>[25] Cátedra de Economía FI-UBA. (2017). <em>Ejemplo de matriz de insumo-producto</em>.</li>
+<li>[26] Instituto Nacional de Estadística (INE España). (s.f.). <em>Sobre la utilización de la matriz inversa de Leontief en...</em></li>
+<li>[27] Khan Academy. (s.f.). <em>Ejemplos de multiplicadores de Lagrange (artículo)</em>. Recuperado de https://es.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/constrained-optimization/a/lagrange-multipliers-examples</li>
+<li>[28] Khan Academy. (s.f.). <em>Ejemplo de multiplicadores de Lagrange. Parte 1 (video)</em>.</li>
+<li>[29] OpenStax. (2022). <em>4.8 Multiplicadores de Lagrange - Cálculo volumen 3</em>.</li>
+<li>[30] Scribd. (s.f.). <em>Ejemplos de Aplicacion Multiplicadores de Lagrange | PDF</em>.</li>
+<li>[31] LibreTexts. (2022). <em>2.10: Multiplicadores Lagrange</em>.</li>
+<li>[32] Gerald, C. (s.f.). <em>7.2 Application to economics: Leontief Model</em>. Kansas State University.</li>
+<li>[33] University of Maryland. (s.f.). <em>Leontief Input-Output Models</em>.</li>
+<li>[34] Freiwald, R. (s.f.). <em>The Leontief Open Economy Production Model</em>. Washington University in St. Louis.</li>
+<li>[35] LibreTexts. (2022). <em>2.6: Applications – Leontief Models</em>.</li>
+<li>[36] Stack Exchange. (2012). <em>Understanding the Leontief inverse</em>.</li>
+<li>[38] Clark, P. (2007). <em>Economic applications of Lagrange multipliers</em>. Northwestern University.</li>
+<li>[39] Wikipedia. (s.f.). <em>Lagrange multiplier</em>.</li>
+<li>[40] Inomics. (2022). <em>Lagrangian Optimization</em>.</li>
+<li>[41] Khan Academy. (s.f.). <em>Interpretation of Lagrange multipliers (article)</em>.</li>
+<li>[42] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Matriz Insumo Producto</em>. [Listado detallado de matrices 2007]. Recuperado de https://m.inei.gob.pe/estadisticas/indice-tematico/matriz-insumo-producto-13673/</li>
+<li>[43] Instituto Nacional de Estadística e Informática (INEI). (s.f.). <em>Cuentas Nacionales</em>. Recuperado de https://m.inei.gob.pe/estadisticas/indice-tematico/national-accounts/</li>
+<li>[44] Pontificia Universidad Católica del Perú (PUCP). (2016). <em>Multiplicadores básicos de la economía peruana 1994-2007</em>.</li>
+<li>[45] Pontificia Universidad Católica del Perú (PUCP). (2015). <em>Multiplicadores Básicos de la Matriz Insumo Producto del Perú 1994 y 2007</em>.</li>
+<li>[46] ResearchGate. (s.f.). <em>Figura: Multiplicadores Tipo I, Tipo II y Keynesianos</em>.</li>
+<li>[47] Banco Central de Reserva del Perú (BCRP). (2025). <em>Caracterización del Departamento de Arequipa</em>. [Tabla N°2 VAB 2024].</li>
+<li>[48] Montoya Zuñiga, S. M. (2015). <em>El Modelo Insumo Producto (INPUT-OUTPUT) y su...</em> Repositorio ALICIA - CONCYTEC.</li>
+<li>[49] Sánchez Vargas, I. (2024). <em>¿Cómo puede utilizarse la matriz insumo-producto para...</em> Revista de la Universidad de Lima.</li>
+<li>[50] Centro de Investigación de Economía y Negocios Globales (CIEN-ADEX). (2020). <em>Reporte de Empleo Diciembre 2020</em>.</li>
+<li>[54] Comisión Económica para América Latina y el Caribe (CEPAL). (2020). <em>Estadísticas económicas integradas: La experiencia de Perú</em>.</li>
+</ul>
+</div>
+</div>
+
+</body></html>

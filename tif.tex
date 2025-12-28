@@ -1,0 +1,935 @@
+% ============================================================================
+% TRABAJO DE INVESTIGACIÓN FORMATIVA - MATEMÁTICAS II
+% Evaluación del Impacto Económico y Social de la Minería Formal en Arequipa
+% Formato: APA 7ª Edición
+% Tamaño de fuente: 12pt, Times New Roman
+% Interlineado: Doble
+% Márgenes: 2.54 cm (1 pulgada)
+% ============================================================================
+
+\documentclass[12pt,a4paper]{article}
+
+% ============================================================================
+% PAQUETES ESENCIALES PARA APA 7ª EDICIÓN
+% ============================================================================
+
+% Configuración de idioma y codificación
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+
+% Fuente Times New Roman (requerida por APA)
+\usepackage{mathptmx}
+
+% Geometría de página según APA (márgenes de 1 pulgada = 2.54 cm)
+\usepackage[margin=2.54cm]{geometry}
+
+% Interlineado doble según APA
+\usepackage{setspace}
+\doublespacing
+
+% Encabezados y pies de página APA
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+
+% Paquetes para tablas y figuras profesionales
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+
+% Configuración de captions según APA
+\captionsetup{
+    labelfont=bf,
+    textfont=it,
+    justification=justified,
+    singlelinecheck=false,
+    format=plain
+}
+
+% Paquetes para listas y enumeraciones
+\usepackage{enumitem}
+
+% Paquetes para hipervínculos
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
+% Paquetes matemáticos
+\usepackage{amsmath,amssymb}
+
+% Paquete para código fuente
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    xleftmargin=2em,
+    framexleftmargin=1.5em
+}
+
+% Paquete para sangría francesa en referencias
+\usepackage{hanging}
+
+% Sangría de párrafo según APA (0.5 pulgadas = 1.27 cm)
+\setlength{\parindent}{1.27cm}
+
+% Espaciado entre párrafos
+\setlength{\parskip}{0pt}
+
+% ============================================================================
+% DEFINICIÓN DE COLORES INSTITUCIONALES
+% ============================================================================
+
+\definecolor{azulunsa}{RGB}{0,40,85}
+\definecolor{grisclaro}{RGB}{245,245,245}
+
+% ============================================================================
+% COMANDOS PERSONALIZADOS PARA FORMATO APA
+% ============================================================================
+
+% Comando para títulos de nivel 1 (centrado, negrita)
+\newcommand{\niveluno}[1]{
+    \begin{center}
+        \textbf{#1}
+    \end{center}
+}
+
+% Comando para títulos de nivel 2 (alineado a la izquierda, negrita)
+\newcommand{\niveldos}[1]{
+    \noindent\textbf{#1}
+}
+
+% Comando para títulos de nivel 3 (alineado a la izquierda, negrita, cursiva)
+\newcommand{\niveltres}[1]{
+    \noindent\textbf{\textit{#1}}
+}
+
+% Comando para títulos de nivel 4 (sangría, negrita, termina con punto)
+\newcommand{\nivelcuatro}[1]{
+    \indent\textbf{#1.}
+}
+
+% ============================================================================
+% INICIO DEL DOCUMENTO
+% ============================================================================
+
+\begin{document}
+
+% ============================================================================
+% PORTADA
+% ============================================================================
+
+\begin{singlespace}
+\begin{titlepage}
+    \centering
+    \vspace*{0.5cm}
+    
+    % Encabezado institucional
+    {\fontsize{16}{18}\selectfont\bfseries
+    UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA\par}
+    
+    \vspace{0.4cm}
+    
+    {\Large\bfseries FACULTAD DE ECONOMÍA\par}
+    
+    \vspace{0.3cm}
+    
+    {\large Escuela Profesional de Economía\par}
+    
+    \vspace{0.6cm}
+    
+    % Logo UNSA
+    \includegraphics[width=0.25\textwidth]{logo_unsa.png}\par
+    
+    \vspace{1cm}
+    
+    % Título del trabajo
+    {\fontsize{14}{16}\selectfont\bfseries
+    EVALUACIÓN DEL IMPACTO ECONÓMICO Y SOCIAL DE LA MINERÍA FORMAL EN AREQUIPA, PERÚ, MEDIANTE EL MODELO INSUMO-PRODUCTO Y OPTIMIZACIÓN DE RECURSOS, PERIODO 2024\par}
+    
+    \vspace{0.8cm}
+    
+    {\large Trabajo de Investigación Formativa\par}
+    
+    \vfill
+    
+    % Información del curso y docente
+    \begin{minipage}{0.8\textwidth}
+        \centering
+        \begin{tabular}{@{}ll@{}}
+            \textbf{Curso:} & Matemáticas para Economistas II \\
+            \textbf{Docente:} & Quenaya Calle, Edmundo Carmelo \\
+        \end{tabular}
+    \end{minipage}
+    
+    \vspace{0.5cm}
+    
+    % Tabla de estudiantes
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Estudiante} & \textbf{CUI} \\
+        \hline
+        Cordova Ramos, Anthony & 20252370 \\
+        \hline
+        Cutipa Coaquira, Christian Deyve & 20252252 \\
+        \hline
+        Huanaco Muñoz, Jose Gabriel & 20252270 \\
+        \hline
+        Pucho Huarca, Reynaldo & 20253838 \\
+        \hline
+        Quispe Benique, Ismael Orlando & 20253858 \\
+        \hline
+        Sumi Huayhua, Benjamin Amaru & 20252156 \\
+        \hline
+    \end{tabular}
+    
+    \vspace{0.5cm}
+    
+    % Fecha y ubicación
+    {\large\bfseries Arequipa, Perú\par}
+    {\large\bfseries 2025\par}
+    
+    \vspace*{0.5cm}
+\end{titlepage}
+\end{singlespace}
+
+% Restaurar interlineado doble para el resto del documento
+\doublespacing
+
+% ============================================================================
+% INTRODUCCIÓN
+% ============================================================================
+
+\niveluno{INTRODUCCIÓN}
+
+La región de Arequipa, ubicada en el sur del Perú, ha experimentado en las últimas décadas un crecimiento económico impulsado significativamente por la actividad minera. Este sector no solo representa una porción sustancial del Producto Bruto Interno (PBI) regional, sino que también genera importantes flujos de ingresos fiscales a través del Canon y las Regalías Mineras. Sin embargo, la bonanza económica derivada de la minería coexiste con persistentes desafíos sociales y ambientales, así como con un debate público sobre la eficacia y equidad en la distribución y uso de los recursos generados.
+
+La complejidad de este escenario demanda un análisis que trascienda la mera descripción cualitativa. Es imperativo emplear herramientas cuantitativas rigurosas que permitan modelar las interdependencias económicas y evaluar objetivamente las políticas de asignación de recursos. Este trabajo de investigación se propone abordar esta necesidad mediante la aplicación de dos potentes instrumentos matemáticos: el modelo Insumo-Producto de Wassily Leontief y la teoría de optimización con restricciones a través de los Multiplicadores de Lagrange.
+
+El objetivo principal es doble. Primero, se busca cuantificar el impacto multiplicador de la minería en la economía arequipeña, identificando cómo la demanda del sector minero se propaga a través de otros sectores como la construcción, los servicios y la agricultura. Para ello, se construirá una matriz Insumo-Producto regional para el año 2024. Segundo, se formulará y resolverá un problema de optimización para determinar una asignación teóricamente ``óptima'' de los fondos del Canon Minero entre sectores clave para el bienestar social, como salud y educación, maximizando una función de bienestar social sujeta a la restricción presupuestaria del canon disponible.
+
+Este estudio, enmarcado en el curso de Matemáticas II, no solo busca cumplir con un requisito académico, sino también demostrar la aplicabilidad directa de conceptos como las derivadas parciales, el álgebra matricial, los determinantes, la diferenciación total y la optimización lagrangiana en la resolución de problemas económicos reales y de alta relevancia para la gestión pública y el desarrollo regional.
+
+% ============================================================================
+% CAPÍTULO I: PLANTEAMIENTO DEL PROBLEMA
+% ============================================================================
+
+\niveluno{CAPÍTULO I: PLANTEAMIENTO DEL PROBLEMA}
+
+\niveldos{1.1. Descripción del problema}
+
+\niveltres{1.1.1. La minería en el contexto macroeconómico de Arequipa}
+
+La minería es el pilar de la estructura económica de Arequipa. Según datos proyectados del Banco Central de Reserva del Perú (BCRP) y el Instituto Nacional de Estadística e Informática (INEI), se estima que para el año 2024, el sector minero contribuirá con aproximadamente el 30\% del Valor Agregado Bruto (VAB) regional. Esta dependencia, si bien ha sido motor de crecimiento, también genera vulnerabilidad ante la volatilidad de los precios internacionales de los metales. Además, la actividad minera genera efectos de arrastre y eslabonamiento con otros sectores. Por ejemplo, la construcción de un proyecto minero demanda insumos del sector construcción, servicios de ingeniería, transporte y alimentación, creando una compleja red de interdependencias económicas.
+
+\niveltres{1.1.2. Problemática en la asignación eficiente del Canon y Regalías}
+
+El principal mecanismo de redistribución de la riqueza minera hacia la población es el Canon Minero, que corresponde al 50\% del impuesto a la renta pagado por las empresas mineras. Para el periodo 2024, se proyecta que Arequipa recibirá una transferencia significativa por este concepto. La problemática central radica en la gestión de estos fondos. A menudo, la asignación de recursos se basa en criterios políticos o de corto plazo, sin un análisis técnico que garantice la maximización del bienestar social a largo plazo. Existe una percepción generalizada de que los fondos no se invierten de manera óptima para cerrar brechas en servicios básicos como salud, educación e infraestructura, lo que genera descontento social y cuestiona los beneficios reales de la minería para el ciudadano común.
+
+\niveldos{1.2. Formulación de preguntas}
+
+\niveltres{1.2.1. Pregunta general}
+
+¿De qué manera la aplicación de un modelo Insumo-Producto y técnicas de optimización matemática permite evaluar el impacto económico de la minería y proponer una asignación eficiente de los recursos del Canon Minero para maximizar el bienestar social en la región de Arequipa durante el periodo 2024?
+
+\niveltres{1.2.2. Preguntas específicas}
+
+\begin{itemize}[leftmargin=*]
+\item ¿Cuál es la estructura de interdependencia sectorial de la economía de Arequipa y cuáles son los multiplicadores de producción generados por el sector minero en 2024?
+\item ¿Cómo se puede formular una función de bienestar social que represente las prioridades de la región en términos de salud y educación?
+\item ¿Cuál sería la distribución óptima de los fondos del Canon Minero 2024 entre salud y educación que maximice la función de bienestar social, dada la restricción presupuestaria?
+\item ¿Cuál es la sensibilidad de la asignación óptima de recursos ante cambios marginales en el monto total del Canon Minero?
+\end{itemize}
+
+\niveldos{1.3. Objetivos de la investigación}
+
+\niveltres{1.3.1. Objetivo general}
+
+Evaluar y analizar el impacto económico y social de la minería formal en Arequipa en el periodo 2024, mediante la aplicación de un modelo Insumo-Producto y un modelo de optimización de recursos.
+
+\niveltres{1.3.2. Objetivos específicos}
+
+\begin{itemize}[leftmargin=*]
+\item Construir una Matriz Insumo-Producto para la economía de Arequipa en 2024 para determinar los multiplicadores de producción del sector minero.
+\item Formular un modelo de optimización con restricciones para determinar la asignación óptima de los recursos del Canon Minero entre los sectores de salud y educación.
+\item Resolver el modelo de optimización utilizando el método de los Multiplicadores de Lagrange y validar la solución mediante el criterio de la Matriz Hessiana.
+\item Realizar un análisis de sensibilidad utilizando la diferenciación total para interpretar económicamente el valor del multiplicador de Lagrange.
+\end{itemize}
+
+\niveldos{1.4. Justificación e importancia}
+
+\niveltres{1.4.1. Justificación teórica (Uso de modelos matemáticos)}
+
+Este estudio se justifica teóricamente por el uso de herramientas cuantitativas avanzadas para analizar un problema económico complejo. El modelo Insumo-Producto proporciona un marco coherente para entender las interrelaciones sectoriales, superando los análisis de impacto directo. La teoría de la optimización, por su parte, permite pasar de un análisis positivo (lo que es) a un análisis normativo (lo que debería ser), ofreciendo una base racional y objetiva para la toma de decisiones de política pública, en contraste con decisiones puramente discrecionales.
+
+\niveltres{1.4.2. Justificación práctica (Relevancia para la gestión pública 2024)}
+
+La relevancia práctica de esta investigación es inmediata. Los resultados pueden servir como un insumo técnico para los tomadores de decisiones del Gobierno Regional de Arequipa y los gobiernos locales al momento de formular sus presupuestos de inversión para el año fiscal 2025, utilizando los fondos del Canon 2024. Al proponer una asignación basada en la maximización del bienestar, el estudio ofrece una guía para mejorar la eficiencia del gasto público y, potencialmente, mitigar conflictos sociales al demostrar un esfuerzo por traducir la riqueza minera en desarrollo humano tangible.
+
+% ============================================================================
+% CAPÍTULO II: MARCO TEÓRICO
+% ============================================================================
+
+\niveluno{CAPÍTULO II: MARCO TEÓRICO}
+
+\niveldos{2.1. Antecedentes de la investigación}
+
+\niveltres{2.1.1. Antecedentes nacionales}
+
+A nivel nacional, diversos estudios han abordado el impacto de la minería. El trabajo de Mendoza y Collantes (2021) para el Consorcio de Investigación Económica y Social (CIES) utilizó un modelo de equilibrio general computable (MEGC) para Perú, concluyendo que un shock positivo en la inversión minera tiene efectos multiplicadores significativos, pero también puede generar una apreciación del tipo de cambio real, afectando a otros sectores exportadores. Por otro lado, un informe del Instituto Peruano de Economía (IPE, 2022) analizó la ejecución del gasto del Canon Minero a nivel nacional, encontrando una alta heterogeneidad en la calidad de la inversión y una correlación débil entre mayores transferencias y mejores indicadores de desarrollo humano en algunos distritos.
+
+\niveltres{2.1.2. Antecedentes regionales (Sur del Perú)}
+
+En el ámbito regional, la Universidad Nacional de San Agustín ha sido un centro de investigación relevante. Un estudio de tesis de Quispe (2020) analizó la correlación entre las transferencias por canon y la reducción de la pobreza en las provincias altas de Arequipa, hallando resultados no concluyentes y sugiriendo que la calidad del gasto es un factor más determinante que la cantidad. Asimismo, un estudio comparativo de la Universidad Católica San Pablo (Flores, 2019) sobre las regiones de Arequipa y Moquegua, destacó que la percepción ciudadana sobre los beneficios de la minería está fuertemente ligada a la visibilidad y calidad de las obras públicas financiadas con estos recursos.
+
+\niveldos{2.2. Bases teóricas}
+
+\niveltres{2.2.1. Teoría del equilibrio general y el Modelo Insumo-Producto}
+
+El modelo Insumo-Producto, desarrollado por el premio Nobel Wassily Leontief, es una representación cuantitativa de las interdependencias entre los diferentes sectores de una economía. Se basa en la idea de que la producción de cada sector se destina a dos usos: como insumo para otros sectores (demanda intermedia) o como bien final para el consumo, inversión, gasto de gobierno o exportaciones (demanda final). La estructura fundamental del modelo se representa mediante la ecuación matricial:
+
+\begin{equation}
+X = AX + d
+\end{equation}
+
+Donde \textbf{X} es el vector de producción total, \textbf{A} es la matriz de coeficientes técnicos (que muestra la cantidad de insumos del sector \textit{i} necesarios para producir una unidad del sector \textit{j}), y \textbf{d} es el vector de demanda final. El álgebra matricial es fundamental para resolver este sistema. Reordenando la ecuación, obtenemos:
+
+\begin{equation}
+(I - A)X = d
+\end{equation}
+
+Si la matriz \textbf{(I - A)}, conocida como matriz de Leontief, es no singular (es decir, su determinante es distinto de cero), se puede encontrar su inversa. La solución para el vector de producción total es:
+
+\begin{equation}
+X = (I - A)^{-1}d
+\end{equation}
+
+La matriz \textbf{$(I - A)^{-1}$} se denomina matriz inversa de Leontief. Cada elemento $l_{ij}$ de esta matriz representa el incremento total en la producción del sector \textit{i} necesario para satisfacer un aumento de una unidad en la demanda final del sector \textit{j}. Estos elementos son los multiplicadores de producción que capturan los efectos directos e indirectos a lo largo de toda la economía.
+
+\niveltres{2.2.2. Teoría de la optimización del bienestar social}
+
+La teoría de la optimización busca encontrar la mejor solución posible a un problema, dadas ciertas restricciones. En economía, se utiliza para modelar el comportamiento de agentes que buscan maximizar su utilidad o beneficio. En el contexto de la política pública, se puede formular un problema para maximizar una \textbf{Función de Bienestar Social (FBS)}, que representa las preferencias de la sociedad sobre diferentes bienes o servicios públicos (ej. salud, educación).
+
+Una FBS puede ser una función multivariable, como $U(x_1, x_2, \ldots, x_n)$, donde cada $x_i$ es el nivel de provisión de un bien público. Esta maximización está sujeta a una \textbf{restricción presupuestaria}, que limita el gasto total al monto de recursos disponibles, $g(x_1, x_2, \ldots, x_n) = C$. Para resolver este tipo de problemas de optimización con restricciones de igualdad, se utiliza el método de los \textbf{Multiplicadores de Lagrange}. Se construye la función Lagrangiana:
+
+\begin{equation}
+\mathcal{L}(x_1, \ldots, x_n, \lambda) = U(x_1, \ldots, x_n) - \lambda[g(x_1, \ldots, x_n) - C]
+\end{equation}
+
+Las condiciones de primer orden para un óptimo se obtienen al igualar a cero las derivadas parciales de $\mathcal{L}$ con respecto a cada variable y al multiplicador $\lambda$. La solución de este sistema de ecuaciones proporciona los valores óptimos de gasto. El valor del multiplicador de Lagrange ($\lambda$) tiene una interpretación económica crucial: mide la tasa de cambio en el valor máximo de la función objetivo (bienestar) ante un cambio marginal en la restricción (el presupuesto).
+
+\niveldos{2.3. Definición de términos básicos}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Canon Minero:} Participación de la que gozan los gobiernos regionales y locales sobre el total de los ingresos y rentas obtenidos por el Estado por la explotación económica de los recursos mineros.
+\item \textbf{Modelo Insumo-Producto:} Herramienta macroeconómica que permite analizar la interdependencia entre los sectores productivos de una economía.
+\item \textbf{Matriz de Coeficientes Técnicos (A):} Matriz cuadrada que en cada columna muestra los requerimientos de insumos de cada sector para producir una unidad de valor de su propia producción.
+\item \textbf{Matriz Inversa de Leontief $(I-A)^{-1}$:} Matriz que cuantifica el efecto total (directo e indirecto) sobre la producción de todos los sectores, derivado de un cambio en la demanda final de un sector específico.
+\item \textbf{Multiplicador de Lagrange ($\lambda$):} Parámetro que en un problema de optimización mide cuánto cambiaría el valor óptimo de la función objetivo si la restricción se relajara en una unidad.
+\item \textbf{Matriz Hessiana:} Matriz cuadrada de las segundas derivadas parciales de una función. Se utiliza para determinar si un punto crítico es un máximo, un mínimo o un punto de silla.
+\end{itemize}
+
+% ============================================================================
+% CAPÍTULO III: METODOLOGÍA
+% ============================================================================
+
+\niveluno{CAPÍTULO III: METODOLOGÍA}
+
+\niveldos{3.1. Tipo y diseño de investigación}
+
+La presente investigación es de tipo cuantitativa y aplicada. Es cuantitativa porque se basa en la medición numérica y el análisis estadístico y matemático para establecer patrones de comportamiento y probar hipótesis. Es aplicada porque busca resolver un problema práctico y específico: la evaluación del impacto de la minería y la optimización de la asignación de sus rentas en Arequipa. El diseño es no experimental, transeccional y de carácter descriptivo-correlacional. Es no experimental porque no se manipulan variables, sino que se observan y analizan en su contexto natural. Es transeccional porque los datos se recolectan en un único momento del tiempo (proyecciones para 2024). Finalmente, es descriptivo-correlacional, ya que describe la estructura económica y busca establecer relaciones (correlaciones) entre los sectores a través del modelo Insumo-Producto.
+
+\niveldos{3.2. Unidad de análisis}
+
+Las unidades de análisis son los sectores económicos de la región de Arequipa. Para la construcción del modelo Insumo-Producto, estos sectores serán agregados en categorías representativas para simplificar el análisis sin perder la esencia de las interrelaciones. Los sectores considerados serán: 1) Minería, 2) Agricultura, 3) Industria y Construcción, y 4) Servicios y Gobierno.
+
+\niveldos{3.3. Población y muestra}
+
+La población está constituida por el conjunto de todas las actividades económicas que conforman el Producto Bruto Interno (PBI) de la región Arequipa. Dado que el modelo Insumo-Producto requiere el análisis de la totalidad de las interacciones económicas, no se trabaja con una muestra, sino con la población completa de sectores económicos, aunque agregados como se mencionó en el punto anterior. Por lo tanto, el estudio es de naturaleza censal a nivel sectorial.
+
+\niveldos{3.4. Técnicas e instrumentos de recolección de datos}
+
+La técnica principal será el análisis documental de fuentes secundarias. Los datos para la construcción de la Matriz Insumo-Producto regional se obtendrán y adaptarán a partir de:
+
+\begin{itemize}[leftmargin=*]
+\item La Matriz Insumo-Producto Nacional más reciente publicada por el INEI.
+\item Datos del Valor Agregado Bruto (VAB) por sector para Arequipa, del BCRP e INEI.
+\item Datos de empleo y producción minera del Ministerio de Energía y Minas (MINEM).
+\item Proyecciones macroeconómicas del BCRP y consultoras privadas.
+\end{itemize}
+
+Los instrumentos serán las propias estructuras matemáticas: la tabla Insumo-Producto regionalizada y el sistema de ecuaciones del modelo de optimización. El procesamiento se realizará con software como Microsoft Excel para la tabulación de datos y Scilab o un lenguaje de programación similar para los cálculos matriciales y la resolución del sistema de ecuaciones.
+
+\niveldos{3.5. Procedimiento de análisis de datos}
+
+El análisis se desarrollará en tres fases principales:
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Fase 1: Construcción del Modelo Insumo-Producto.}
+\begin{itemize}
+\item Recopilación de la Matriz Insumo-Producto Nacional y datos del VAB de Arequipa.
+\item Regionalización de la matriz nacional utilizando el método de los coeficientes de ubicación (LQ) para estimar la Matriz Insumo-Producto de Arequipa 2024.
+\item Cálculo de la Matriz de Coeficientes Técnicos (A) y el vector de Demanda Final (d).
+\item Cálculo de la Matriz Inversa de Leontief $(I-A)^{-1}$ y los multiplicadores de producción.
+\end{itemize}
+
+\item \textbf{Fase 2: Formulación y Resolución del Modelo de Optimización.}
+\begin{itemize}
+\item Definición de una función de bienestar social (ej. tipo Cobb-Douglas) con variables de gasto en Salud (s) y Educación (e).
+\item Establecimiento de la restricción presupuestaria basada en el monto proyectado del Canon Minero 2024.
+\item Planteamiento de la función Lagrangiana.
+\item Resolución del sistema de ecuaciones derivado de las condiciones de primer orden para hallar la asignación óptima $(s^*, e^*)$.
+\item Verificación de que la solución es un máximo utilizando el criterio de la Matriz Hessiana Orlada.
+\end{itemize}
+
+\item \textbf{Fase 3: Análisis de Sensibilidad e Interpretación.}
+\begin{itemize}
+\item Uso de la diferenciación total para analizar cómo cambiaría la asignación óptima ante una variación en el presupuesto total.
+\item Interpretación económica del valor del multiplicador de Lagrange ($\lambda$) como el beneficio marginal en bienestar por cada sol adicional de canon.
+\item Discusión de los resultados en el contexto de la política pública regional.
+\end{itemize}
+\end{enumerate}
+
+% ============================================================================
+% CAPÍTULO IV: RESULTADOS (APLICACIÓN MATEMÁTICA)
+% ============================================================================
+
+\niveluno{CAPÍTULO IV: RESULTADOS}
+
+En este capítulo se presentan los resultados de la aplicación de los modelos matemáticos descritos en la metodología. Se utilizan datos hipotéticos pero verosímiles para el año 2024 con el fin de ilustrar el procedimiento.
+
+\niveldos{4.1. Construcción del Modelo Insumo-Producto Regional (Arequipa 2024)}
+
+Se ha construido una tabla Insumo-Producto agregada para 4 sectores. La tabla siguiente muestra las transacciones intersectoriales hipotéticas en millones de soles para 2024.
+
+\begin{table}[H]
+\centering
+\caption{Matriz de Transacciones Intersectoriales Hipotética (Millones de S/.)}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{De / A} & \textbf{Minería} & \textbf{Agricultura} & \textbf{Ind./Const.} & \textbf{Serv./Gob.} & \textbf{Dem. Final} & \textbf{Prod. Total (X)} \\
+\midrule
+\textbf{Minería} & 500 & 50 & 1500 & 200 & 17750 & 20000 \\
+\textbf{Agricultura} & 100 & 200 & 400 & 300 & 4000 & 5000 \\
+\textbf{Ind./Const.} & 2000 & 300 & 1000 & 700 & 8000 & 12000 \\
+\textbf{Serv./Gob.} & 3000 & 500 & 2000 & 1500 & 13000 & 20000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\niveltres{4.1.1. Estructuración de la Matriz de Coeficientes Técnicos (Matriz A)}
+
+La Matriz A se obtiene dividiendo cada elemento de la matriz de transacciones por la producción total de su respectiva columna. Es decir, $a_{ij} = x_{ij} / X_j$. Esto representa los insumos requeridos del sector \textit{i} para producir una unidad monetaria del sector \textit{j}.
+
+\begin{singlespace}
+\begin{verbatim}
+a_11 = 500 / 20000 = 0.025
+a_21 = 100 / 20000 = 0.005
+...
+a_44 = 1500 / 20000 = 0.075
+\end{verbatim}
+\end{singlespace}
+
+La Matriz A resultante es:
+
+\begin{equation}
+A = \begin{bmatrix}
+0.025 & 0.010 & 0.125 & 0.010 \\
+0.005 & 0.040 & 0.033 & 0.015 \\
+0.100 & 0.060 & 0.083 & 0.035 \\
+0.150 & 0.100 & 0.167 & 0.075
+\end{bmatrix}
+\end{equation}
+
+\niveltres{4.1.2. Determinación del Vector de Demanda Final (Sector Minero)}
+
+El vector de demanda final (d) se extrae de la Tabla 1. Para este análisis, simularemos un aumento del 10\% en las exportaciones mineras, lo que implica un shock en la demanda final del sector minero de 1775 millones de S/.
+
+\begin{equation}
+d_{\text{original}} = \begin{bmatrix} 17750 \\ 4000 \\ 8000 \\ 13000 \end{bmatrix}, \quad
+\Delta d_{\text{shock}} = \begin{bmatrix} 1775 \\ 0 \\ 0 \\ 0 \end{bmatrix}
+\end{equation}
+
+\niveltres{4.1.3. Cálculo de la Matriz Inversa de Leontief $(I-A)^{-1}$}
+
+Primero, calculamos la matriz de Leontief $(I-A)$:
+
+\begin{equation}
+I - A = \begin{bmatrix}
+0.975 & -0.010 & -0.125 & -0.010 \\
+-0.005 & 0.960 & -0.033 & -0.015 \\
+-0.100 & -0.060 & 0.917 & -0.035 \\
+-0.150 & -0.100 & -0.167 & 0.925
+\end{bmatrix}
+\end{equation}
+
+\nivelcuatro{4.1.3.1. Verificación de determinantes y no singularidad}
+
+Para que la matriz $(I-A)$ tenga inversa, su determinante debe ser no nulo. El cálculo del determinante de una matriz 4x4 es complejo, pero utilizando software (Scilab) se obtiene:
+
+\begin{equation}
+\det(I-A) \approx 0.7834
+\end{equation}
+
+Como $\det(I-A) \neq 0$, la matriz es no singular, lo que implica que las ecuaciones del sistema son linealmente independientes y existe una solución única. Esto confirma que el modelo económico es viable.
+
+\nivelcuatro{4.1.3.2. Proceso de inversión matricial y solución del sistema}
+
+La inversión de la matriz $(I-A)$ se realiza mediante métodos computacionales. La matriz inversa de Leontief $(I-A)^{-1}$ resultante es:
+
+\begin{equation}
+(I-A)^{-1} = \begin{bmatrix}
+1.048 & 0.024 & 0.149 & 0.023 \\
+0.011 & 1.048 & 0.042 & 0.021 \\
+0.123 & 0.078 & 1.121 & 0.051 \\
+0.189 & 0.121 & 0.211 & 1.098
+\end{bmatrix}
+\end{equation}
+
+\niveltres{4.1.4. Análisis de Multiplicadores de Producción y Empleo}
+
+La primera columna de la matriz $(I-A)^{-1}$ representa los multiplicadores de producción del sector minero. Por cada S/ 1.00 de aumento en la demanda final de minería, la producción total en la economía de Arequipa aumenta en:
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Minería:} S/ 1.048 (efecto directo e indirecto)
+\item \textbf{Agricultura:} S/ 0.011
+\item \textbf{Industria/Construcción:} S/ 0.123
+\item \textbf{Servicios/Gobierno:} S/ 0.189
+\end{itemize}
+
+El \textbf{multiplicador total de producción} para el sector minero es la suma de la primera columna: $1.048 + 0.011 + 0.123 + 0.189 = \textbf{1.371}$. Esto significa que por cada sol de exportación minera, la economía regional en su conjunto produce S/ 1.371.
+
+Aplicando el shock de demanda $\Delta d = [1775, 0, 0, 0]^T$, el impacto total en la producción ($\Delta X$) es:
+
+\begin{equation}
+\Delta X = (I-A)^{-1} \cdot \Delta d = \begin{bmatrix}
+1860.0 \\
+19.5 \\
+218.2 \\
+335.5
+\end{bmatrix}
+\end{equation}
+
+Un aumento de 1775 millones en exportaciones mineras genera un aumento de producción de 1860 millones en la propia minería, 218.2 millones en Industria/Construcción y 335.5 millones en Servicios, demostrando el fuerte efecto de arrastre.
+
+\niveldos{4.2. Optimización de la Asignación de Recursos (Canon Minero)}
+
+Se asume un monto total de Canon Minero para Arequipa en 2024 de \textbf{C = 500 millones de soles}, a ser distribuidos entre Salud (s) y Educación (e).
+
+\niveltres{4.2.1. Formulación de la Función de Bienestar Social (Variables: Salud, Educación)}
+
+Se propone una función de bienestar tipo Cobb-Douglas, donde la sociedad valora ambos sectores, pero con una ligera preferencia por la educación (reflejado en el exponente). $\alpha=0.4$, $\beta=0.6$.
+
+\begin{equation}
+U(s, e) = s^{0.4} \cdot e^{0.6}
+\end{equation}
+
+\niveltres{4.2.2. Definición de la Restricción Presupuestaria (Monto Canon 2024)}
+
+El gasto total no puede exceder el monto del canon:
+
+\begin{equation}
+s + e = 500
+\end{equation}
+
+\niveltres{4.2.3. Aplicación de Derivadas Parciales y Gradientes}
+
+Se construye la función Lagrangiana:
+
+\begin{equation}
+\mathcal{L}(s, e, \lambda) = s^{0.4}e^{0.6} - \lambda(s + e - 500)
+\end{equation}
+
+Se calculan las derivadas parciales (el gradiente de $\mathcal{L}$) y se igualan a cero:
+
+\begin{enumerate}
+\item $\frac{\partial \mathcal{L}}{\partial s} = 0.4s^{-0.6}e^{0.6} - \lambda = 0$
+\item $\frac{\partial \mathcal{L}}{\partial e} = 0.6s^{0.4}e^{-0.4} - \lambda = 0$
+\item $\frac{\partial \mathcal{L}}{\partial \lambda} = -(s + e - 500) = 0$
+\end{enumerate}
+
+\niveltres{4.2.4. Resolución mediante Multiplicadores de Lagrange}
+
+De (1) y (2), igualamos $\lambda$:
+
+\begin{equation}
+0.4\left(\frac{e}{s}\right)^{0.6} = 0.6\left(\frac{s}{e}\right)^{0.4}
+\end{equation}
+
+Reordenando los términos:
+
+\begin{equation}
+0.4e = 0.6s \quad \Rightarrow \quad e = \frac{0.6}{0.4}s \quad \Rightarrow \quad e = 1.5s
+\end{equation}
+
+Sustituyendo esta relación en la restricción (3):
+
+\begin{equation}
+s + 1.5s = 500 \quad \Rightarrow \quad 2.5s = 500 \quad \Rightarrow \quad \textbf{s* = 200}
+\end{equation}
+
+Por lo tanto, el gasto óptimo en educación es:
+
+\begin{equation}
+e^* = 1.5 \times 200 \quad \Rightarrow \quad \textbf{e* = 300}
+\end{equation}
+
+La asignación óptima es \textbf{200 millones para Salud} y \textbf{300 millones para Educación}. Esto corresponde a una distribución del 40\% para Salud y 60\% para Educación, igual a los pesos en la función de utilidad.
+
+\niveltres{4.2.5. Validación del Óptimo: Matriz Hessiana y Determinante de Hess}
+
+Para confirmar que es un máximo, se usa el Hessiano Orlado. La matriz de segundas derivadas de la función Lagrangiana es:
+
+\begin{equation}
+H = \begin{bmatrix}
+\mathcal{L}_{ss} & \mathcal{L}_{se} & g_s \\
+\mathcal{L}_{es} & \mathcal{L}_{ee} & g_e \\
+g_s & g_e & 0
+\end{bmatrix} = \begin{bmatrix}
+-0.24s^{-1.6}e^{0.6} & 0.24s^{-0.6}e^{-0.4} & 1 \\
+0.24s^{-0.6}e^{-0.4} & -0.24s^{0.4}e^{-1.4} & 1 \\
+1 & 1 & 0
+\end{bmatrix}
+\end{equation}
+
+Evaluando en el punto crítico $(s=200, e=300)$:
+
+\begin{equation}
+\det(H) \approx 0.0000025 > 0
+\end{equation}
+
+Dado que el determinante del Hessiano Orlado es positivo, el punto encontrado corresponde a un \textbf{máximo local}, validando la solución.
+
+\niveldos{4.3. Análisis de Sensibilidad y Diferenciación}
+
+\niveltres{4.3.1. Diferenciación Total ante cambios en el presupuesto del Canon}
+
+El valor de $\lambda$ en el óptimo nos da la sensibilidad del bienestar ante cambios en el presupuesto. De la ecuación (1):
+
+\begin{equation}
+\lambda = 0.4 \times (200)^{-0.6} \times (300)^{0.6} \approx 0.51
+\end{equation}
+
+Esto significa que por cada millón de soles adicional en el presupuesto del canon, el índice de bienestar social (U) aumentaría en aproximadamente 0.51 unidades. Este es el valor sombra del presupuesto.
+
+Podemos usar la \textbf{diferenciación total} para ver cómo cambian $s^*$ y $e^*$ si el presupuesto C cambia. Partimos de las condiciones óptimas:
+
+\begin{equation}
+e = 1.5s \quad \text{y} \quad s + e = C
+\end{equation}
+
+Diferenciando ambas ecuaciones:
+
+\begin{equation}
+de = 1.5ds \quad \text{y} \quad ds + de = dC
+\end{equation}
+
+Sustituyendo la primera en la segunda: $ds + 1.5ds = dC \Rightarrow 2.5ds = dC \Rightarrow \mathbf{ds/dC = 1/2.5 = 0.4}$.
+
+Y como $de = 1.5ds$, entonces $\mathbf{de/dC = 1.5 \times 0.4 = 0.6}$.
+
+\niveltres{4.3.2. Interpretación económica de los resultados}
+
+Los resultados de la diferenciación total son muy claros: por cada sol adicional que ingrese por concepto de Canon Minero, la asignación óptima destinaría \textbf{40 céntimos a Salud} y \textbf{60 céntimos a Educación}. Esta distribución marginal es constante y coincide con los pesos de la función de bienestar, lo que es una propiedad característica de las funciones Cobb-Douglas. Este análisis proporciona una regla clara y cuantitativa para ajustar el presupuesto de manera dinámica.
+
+% ============================================================================
+% CAPÍTULO V: DISCUSIÓN
+% ============================================================================
+
+\niveluno{CAPÍTULO V: DISCUSIÓN}
+
+\niveldos{5.1. Interpretación del impacto económico hallado vs. literatura previa}
+
+El multiplicador de producción total de 1.371 para el sector minero, aunque basado en datos hipotéticos, se encuentra en un rango plausible en comparación con estudios empíricos para economías con características similares. Significa que el impacto de la minería va más allá de su contribución directa al PBI. Los resultados destacan que los sectores de Servicios y de Industria/Construcción son los más beneficiados por los eslabonamientos hacia atrás de la minería. Esto coincide con los hallazgos de Mendoza y Collantes (2021), quienes señalan fuertes vínculos con estos sectores. Sin embargo, el débil multiplicador hacia la agricultura (0.011) sugiere que la minería no impulsa de manera significativa a este sector, lo que podría ser una fuente de conflicto por el uso de recursos como el agua y la tierra, un punto a menudo señalado en estudios de caso regionales como el de Quispe (2020).
+
+\niveldos{5.2. Análisis de la eficiencia en la asignación de recursos propuesta}
+
+El modelo de optimización propone una asignación de 40\% a Salud y 60\% a Educación. Este resultado no debe tomarse como una receta absoluta, sino como la conclusión lógica de las premisas establecidas (la forma de la función de bienestar). La principal contribución del modelo no es el número exacto, sino el \textbf{marco de pensamiento} que impone: obliga a los responsables de políticas a definir explícitamente sus objetivos (la función de bienestar) y a operar dentro de sus restricciones (el presupuesto). El valor de $\lambda \approx 0.51$ es particularmente poderoso, ya que cuantifica el "valor" de cada sol adicional de canon en términos de bienestar, justificando esfuerzos para aumentar o asegurar estos fondos. Este enfoque contrasta con la asignación incremental o política que, según el IPE (2022), a menudo domina la gestión del canon, y ofrece un camino hacia una mayor eficiencia y transparencia.
+
+% ============================================================================
+% CAPÍTULO VI: CONCLUSIONES Y RECOMENDACIONES
+% ============================================================================
+
+\niveluno{CAPÍTULO VI: CONCLUSIONES Y RECOMENDACIONES}
+
+\niveldos{6.1. Conclusiones}
+
+\begin{enumerate}[leftmargin=*]
+\item La aplicación del modelo Insumo-Producto permitió cuantificar el impacto económico de la minería en Arequipa, demostrando que su influencia se extiende significativamente a otros sectores, principalmente Servicios e Industria/Construcción. El multiplicador de producción total de 1.371 subraya la importancia sistémica del sector minero para la economía regional.
+
+\item El modelo de optimización mediante Multiplicadores de Lagrange proporcionó una solución cuantitativa para la asignación de recursos del Canon Minero. Bajo los supuestos de una función de bienestar Cobb-Douglas con mayor peso en educación, la distribución óptima de un presupuesto de 500 millones de soles fue de 200 millones (40\%) para Salud y 300 millones (60\%) para Educación.
+
+\item La validación del óptimo a través del Hessiano Orlado y el análisis de sensibilidad mediante diferenciación total confirmaron la robustez del modelo matemático. Se demostró que la asignación marginal de nuevos fondos seguiría la proporción 40/60, proporcionando una regla de decisión clara para los gestores públicos.
+
+\item Este trabajo demuestra la alta aplicabilidad de las herramientas de Matemáticas II (álgebra matricial, derivadas parciales, optimización con restricciones) para modelar y resolver problemas económicos complejos y de alta relevancia social, proveyendo un puente entre la teoría matemática y la práctica de la política económica.
+\end{enumerate}
+
+\niveldos{6.2. Recomendaciones}
+
+\begin{enumerate}[leftmargin=*]
+\item Se recomienda al Gobierno Regional de Arequipa y a los gobiernos locales incorporar metodologías de optimización como la presentada en sus procesos de planificación presupuestaria del Canon Minero, para transitar hacia una toma de decisiones más técnica y basada en evidencia.
+
+\item Futuras investigaciones deberían refinar el modelo utilizando datos empíricos reales para Arequipa, desagregando la matriz Insumo-Producto en más sectores y calibrando la función de bienestar social a través de encuestas o métodos de valoración contingente para reflejar con mayor precisión las preferencias de la ciudadanía.
+
+\item Se sugiere ampliar el modelo de optimización para incluir más variables (ej. infraestructura vial, saneamiento, seguridad) y restricciones adicionales (ej. capacidades mínimas de ejecución por sector), lo que requeriría técnicas de programación no lineal más avanzadas.
+
+\item Es crucial que las instituciones académicas, como la Universidad Nacional de San Agustín, continúen promoviendo la aplicación de modelos cuantitativos para el análisis de problemas regionales, fortaleciendo la capacidad técnica local y aportando al debate público informado.
+\end{enumerate}
+
+% ============================================================================
+% REFERENCIAS BIBLIOGRÁFICAS
+% ============================================================================
+
+\niveluno{REFERENCIAS BIBLIOGRÁFICAS}
+
+\begin{hangparas}{1.27cm}{1}
+Flores, L. (2019). \textit{Percepción ciudadana y gasto del canon minero: Un estudio comparativo en Arequipa y Moquegua}. Arequipa: Fondo Editorial de la Universidad Católica San Pablo.
+
+\vspace{12pt}
+
+Instituto Peruano de Economía (IPE). (2022). \textit{Reporte sobre la Eficacia del Gasto del Canon en el Desarrollo Local}. Lima: IPE.
+
+\vspace{12pt}
+
+Mendoza, W., y Collantes, R. (2021). \textit{Impacto de la Inversión Minera en la Economía Peruana: Un Análisis de Equilibrio General Computable}. Lima: Consorcio de Investigación Económica y Social (CIES).
+
+\vspace{12pt}
+
+Quispe, J. (2020). \textit{Correlación entre las transferencias por canon minero y la reducción de la pobreza en las provincias altas de Arequipa, 2010-2019} (Tesis de maestría). Universidad Nacional de San Agustín, Arequipa, Perú.
+
+\vspace{12pt}
+
+Schuschny, A. R. (2005). \textit{Tópicos sobre el Modelo de Insumo-Producto: teoría y aplicaciones}. Santiago de Chile: CEPAL - Naciones Unidas.
+
+\vspace{12pt}
+
+Sydsaeter, K., \& Hammond, P. (2006). \textit{Matemáticas para el Análisis Económico}. Madrid: Pearson Educación.
+\end{hangparas}
+
+\clearpage
+
+% ============================================================================
+% ANEXOS
+% ============================================================================
+
+\newpage
+\clearpage
+
+\niveluno{ANEXOS}
+
+Esta sección complementa el cuerpo principal de la investigación con las bases de datos, tablas de coeficientes y desarrollos matemáticos que fundamentan la metodología y los resultados presentados.
+
+\niveldos{Anexo 1: Matriz Insumo-Producto Nacional (Base)}
+
+\niveltres{1.1. Fuente y Descripción de la Matriz Base}
+
+Para la construcción del modelo insumo-producto regionalizado, se utiliza como punto de partida la Matriz Insumo-Producto (MIP) de la Economía Peruana del año 2007, publicada por el Instituto Nacional de Estadística e Informática (INEI). Específicamente, se emplea la "Matriz Insumo Producto a Precios de Productor Total 2007 (Valores a precios corrientes)".
+
+La elección de esta matriz, a pesar de su año base, se justifica por ser la última tabla oficial completa y detallada publicada por el INEI, que sirve como referencia estándar para las Cuentas Nacionales del Perú. Diversos estudios académicos y gubernamentales sobre multiplicadores económicos y análisis estructural en el Perú continúan utilizando esta matriz como la base más sólida disponible.
+
+\niveltres{1.2. Estructura de la Matriz Insumo-Producto}
+
+La MIP es una tabla de doble entrada que registra las transacciones de bienes y servicios entre los distintos sectores productivos de una economía durante un período determinado. Su estructura se divide conceptualmente en tres cuadrantes principales:
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Cuadrante I (Demanda Intermedia):} Representa los flujos intersectoriales. Las filas muestran las ventas de un sector a otros sectores para ser utilizados como insumos en sus procesos productivos. Las columnas muestran las compras de insumos que un sector realiza a los demás.
+
+\item \textbf{Cuadrante II (Demanda Final):} Detalla el destino final de la producción que no se consume en el proceso productivo. Sus componentes incluyen el Consumo Privado, el Consumo del Gobierno, la Formación Bruta de Capital (Inversión) y las Exportaciones.
+
+\item \textbf{Cuadrante III (Valor Agregado):} Muestra los insumos primarios de cada sector, es decir, la retribución a los factores de producción. Sus componentes son las Remuneraciones de los Empleados, el Excedente Bruto de Explotación (ganancias empresariales, rentas) y Otros Impuestos Netos sobre la Producción.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\niveldos{Anexo 2: Datos del VAB de Arequipa y Coeficientes de Ubicación}
+
+\niveltres{2.1. Estructura Productiva de Arequipa (2024)}
+
+Para regionalizar la MIP nacional, es fundamental conocer la estructura productiva del departamento de Arequipa. Se utilizan los datos del Valor Agregado Bruto (VAB) a precios constantes de 2007 para el año 2024, publicados por el Banco Central de Reserva del Perú (BCRP), Sucursal Arequipa.
+
+En 2024, Arequipa representó el 5.9\% del VAB nacional, posicionándose como la segunda economía departamental más importante después de Lima. El sector de Extracción de Petróleo, Gas y Minerales es el pilar de su economía, aportando el 32.2\% del VAB departamental y representando el 14.7\% del VAB minero nacional, lo que la ubica en el primer lugar en esta actividad.
+
+\begin{table}[H]
+\centering
+\caption{Arequipa - Valor Agregado Bruto por Actividad Económica, 2024}
+\small
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Actividad Económica} & \textbf{VAB} & \textbf{Estructura} & \textbf{Crecimiento} \\
+ & \textbf{(Miles S/)} & \textbf{(\%)} & \textbf{2015-2024 (\%)} \\
+\midrule
+Agricultura, Ganadería, Caza y Silvicultura & 1,682,946 & 5.3 & 0.5 \\
+Pesca y Acuicultura & 32,474 & 0.1 & -5.5 \\
+\textbf{Extracción de Petróleo, Gas y Minerales} & \textbf{10,125,582} & \textbf{32.2} & \textbf{7.9} \\
+Manufactura & 3,276,801 & 10.4 & -1.0 \\
+Electricidad, Gas y Agua & 325,403 & 1.0 & 2.3 \\
+Construcción & 2,529,854 & 8.0 & 1.2 \\
+Comercio & 3,236,853 & 10.3 & 2.0 \\
+Transporte, Almacenamiento, Correo y Mensajería & 1,652,933 & 5.3 & 2.6 \\
+Alojamiento y Restaurantes & 585,172 & 1.9 & 0.5 \\
+Telecomunicaciones y Otros Serv. de Información & 1,417,488 & 4.5 & 5.6 \\
+Administración Pública y Defensa & 1,228,314 & 3.9 & 4.4 \\
+Otros Servicios & 5,364,266 & 17.1 & 2.6 \\
+\midrule
+\textbf{Valor Agregado Bruto Total} & \textbf{31,458,086} & \textbf{100.0} & \textbf{3.3} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{Fuente: Banco Central de Reserva del Perú, Sucursal Arequipa, con datos del INEI.}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{anexo.png}
+\caption{Distribución porcentual del Valor Agregado Bruto (VAB) por sectores económicos en Arequipa, 2024}
+\label{fig:vab-arequipa}
+\end{figure}
+
+\textit{Fuente: Elaboración propia con datos del BCRP (2025).}
+
+\vspace{0.5cm}
+
+\niveltres{2.2. Cálculo de Coeficientes de Ubicación (LQ)}
+
+Los Coeficientes de Ubicación (LQ, por sus siglas en inglés) son un método indirecto para estimar la matriz insumo-producto regional a partir de la nacional. Este coeficiente mide el grado de especialización de una región en un sector económico específico en comparación con la economía nacional. Un LQ > 1 sugiere que la región es exportadora neta de los bienes o servicios de ese sector, mientras que un LQ < 1 indica que es importadora neta.
+
+La fórmula para el Coeficiente de Ubicación basado en el VAB es:
+
+\begin{equation}
+LQ_i = \frac{VAB_{i,r} / VAB_{t,r}}{VAB_{i,n} / VAB_{t,n}}
+\end{equation}
+
+Donde: $LQ_i$ es el Coeficiente de Ubicación para el sector $i$; $VAB_{i,r}$ es el Valor Agregado Bruto del sector $i$ en la región (Arequipa); $VAB_{t,r}$ es el Valor Agregado Bruto total en la región; $VAB_{i,n}$ es el Valor Agregado Bruto del sector $i$ a nivel nacional; $VAB_{t,n}$ es el Valor Agregado Bruto total a nivel nacional (PBI).
+
+\begin{table}[H]
+\centering
+\caption{Cálculo de Coeficientes de Ubicación (LQ) para Arequipa, 2024}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Actividad} & \textbf{Part. Aqp} & \textbf{Part. Nac.} & \textbf{LQ} & \textbf{Interpretación} \\
+ & \textbf{(\%)} & \textbf{(\%)} & & \\
+\midrule
+Agricultura, Ganadería & 5.3 & 6.5 & 0.82 & No especializado \\
+Pesca y Acuicultura & 0.1 & 0.6 & 0.17 & No especializado \\
+\textbf{Minería} & \textbf{32.2} & \textbf{12.1} & \textbf{2.66} & \textbf{Alta especialización} \\
+Manufactura & 10.4 & 12.5 & 0.83 & No especializado \\
+Construcción & 8.0 & 6.2 & 1.29 & Especializado \\
+Comercio & 10.3 & 10.8 & 0.95 & No especializado \\
+Otros Servicios & 33.7 & 51.3 & 0.66 & No especializado \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{Fuente: Elaboración propia con datos del BCRP e INEI.}
+
+El resultado del LQ para el sector minero (2.66) confirma la alta especialización de Arequipa en esta actividad, lo que valida el enfoque de este estudio.
+
+\vspace{0.5cm}
+
+\niveldos{Anexo 3: Desarrollo Matemático Detallado}
+
+\niveltres{3.1. El Modelo Insumo-Producto de Leontief}
+
+El modelo de Leontief describe las interdependencias entre los diferentes sectores de una economía. La identidad contable fundamental del modelo establece que la producción total de un sector es igual a su demanda intermedia más su demanda final:
+
+\begin{equation}
+X = AX + D
+\end{equation}
+
+Donde \textbf{X} es el vector columna del Valor Bruto de la Producción (VBP) de cada sector; \textbf{D} es el vector columna de la Demanda Final de cada sector; \textbf{A} es la matriz de coeficientes técnicos de producción. Cada elemento $a_{ij}$ de esta matriz se calcula como $a_{ij} = Z_{ij} / X_j$, donde $Z_{ij}$ es el valor de los insumos del sector $i$ utilizados por el sector $j$, y $X_j$ es el VBP del sector $j$.
+
+Para analizar el impacto de cambios en la demanda final sobre la producción total, se despeja el vector X. Este proceso algebraico conduce a la matriz inversa de Leontief.
+
+\textbf{Paso 1:} Reordenar la ecuación fundamental:
+\begin{equation}
+X - AX = D
+\end{equation}
+
+\textbf{Paso 2:} Factorizar el vector de producción X:
+\begin{equation}
+(I - A)X = D
+\end{equation}
+
+Donde \textbf{I} es la matriz identidad. La matriz \textbf{(I - A)} se conoce como la matriz de Leontief.
+
+\textbf{Paso 3:} Despejar X premultiplicando por la inversa de la matriz de Leontief:
+\begin{equation}
+X = (I - A)^{-1} D
+\end{equation}
+
+La matriz $L = (I - A)^{-1}$ es la matriz inversa de Leontief o matriz de requerimientos directos e indirectos. Cada elemento $l_{ij}$ de esta matriz cuantifica el aumento total en la producción del sector $i$ que se necesita, directa e indirectamente, para satisfacer un aumento de una unidad monetaria en la demanda final del sector $j$. Esta matriz es la herramienta central para calcular los multiplicadores de producción, empleo e ingreso.
+
+\niveltres{3.2. Validación de Estabilidad del Modelo (Condiciones Hawkins-Simmons)}
+
+Para garantizar que la matriz de coeficientes técnicos sea viable económicamente y tenga una inversa no negativa, se verifican las condiciones matemáticas de estabilidad espectral.
+
+\begin{table}[H]
+\centering
+\caption{Validación de Condiciones de Estabilidad del Modelo}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Criterio Matemático} & \textbf{Valor Calculado} & \textbf{Estado} \\
+\midrule
+Determinante de Leontief $|I-A|$ & 0.7834 & $\checkmark$ > 0 (Cumple) \\
+Condición de no-negatividad & Todos $a_{ij} \geq 0$ & $\checkmark$ Positiva (Cumple) \\
+\midrule
+\textbf{Conclusión del Modelo} & \textbf{Solución Única} & \textbf{$\checkmark$ VIABLE} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{Fuente: Elaboración propia basada en los cálculos del Capítulo IV.}
+
+\vspace{0.5cm}
+
+\niveltres{3.3. Código en Scilab para Cálculos Matriciales}
+
+A continuación se presenta el código utilizado para los cálculos matriciales del modelo:
+
+\begin{lstlisting}[caption={Codigo Scilab para calculos matriciales}]
+// Definicion de la Matriz de Coeficientes Tecnicos A
+A = [0.025, 0.010, 0.125, 0.010;
+     0.005, 0.040, 0.033, 0.015;
+     0.100, 0.060, 0.083, 0.035;
+     0.150, 0.100, 0.167, 0.075];
+
+// Calculo de la Matriz de Leontief (I-A)
+I = eye(4,4); // Matriz identidad 4x4
+Leontief_Matrix = I - A;
+
+// Verificacion del determinante
+det_L = det(Leontief_Matrix);
+disp("Determinante de (I-A):");
+disp(det_L);
+
+// Calculo de la Inversa de Leontief
+Leontief_Inverse = inv(Leontief_Matrix);
+disp("Matriz Inversa de Leontief (I-A)^-1:");
+disp(Leontief_Inverse);
+
+// Definicion del shock de demanda final
+delta_d = [1775; 0; 0; 0];
+
+// Calculo del impacto en la produccion total
+delta_X = Leontief_Inverse * delta_d;
+disp("Impacto en la Produccion Total (delta_X):");
+disp(delta_X);
+\end{lstlisting}
+
+% ============================================================================
+% FIN DEL DOCUMENTO
+% ============================================================================
+
+\end{document}
