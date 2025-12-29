@@ -913,15 +913,15 @@ Sydsaeter, K., \& Hammond, P. (2006). \textit{Matemáticas para el Análisis Eco
 
 Esta sección complementa el cuerpo principal de la investigación con las bases de datos, tablas de coeficientes y desarrollos matemáticos que fundamentan la metodología y los resultados presentados.
 
-\niveldosnotoc{Anexo 1: Matriz Insumo-Producto Nacional (Base)}
+\niveldos{Anexo 1: Matriz Insumo-Producto Nacional (Base)}
 
-\niveltresnotoc{1.1. Fuente y Descripción de la Matriz Base}
+\niveltres{1.1. Fuente y Descripción de la Matriz Base}
 
 Para la construcción del modelo insumo-producto regionalizado, se utiliza como punto de partida la Matriz Insumo-Producto (MIP) de la Economía Peruana del año 2007, publicada por el Instituto Nacional de Estadística e Informática (INEI). Específicamente, se emplea la "Matriz Insumo Producto a Precios de Productor Total 2007 (Valores a precios corrientes)".
 
 La elección de esta matriz, a pesar de su año base, se justifica por ser la última tabla oficial completa y detallada publicada por el INEI, que sirve como referencia estándar para las Cuentas Nacionales del Perú. Diversos estudios académicos y gubernamentales sobre multiplicadores económicos y análisis estructural en el Perú continúan utilizando esta matriz como la base más sólida disponible.
 
-\niveltresnotoc{1.2. Estructura de la Matriz Insumo-Producto}
+\niveltres{1.2. Estructura de la Matriz Insumo-Producto}
 
 La MIP es una tabla de doble entrada que registra las transacciones de bienes y servicios entre los distintos sectores productivos de una economía durante un período determinado. Su estructura se divide conceptualmente en tres cuadrantes principales:
 
@@ -935,9 +935,9 @@ La MIP es una tabla de doble entrada que registra las transacciones de bienes y 
 
 \vspace{0.5cm}
 
-\niveldosnotoc{Anexo 2: Datos del VAB de Arequipa y Coeficientes de Ubicación}
+\niveldos{Anexo 2: Datos del VAB de Arequipa y Coeficientes de Ubicación}
 
-\niveltresnotoc{2.1. Estructura Productiva de Arequipa (2024)}
+\niveltres{2.1. Estructura Productiva de Arequipa (2024)}
 
 Para regionalizar la MIP nacional, es fundamental conocer la estructura productiva del departamento de Arequipa. Se utilizan los datos del Valor Agregado Bruto (VAB) a precios constantes de 2007 para el año 2024, publicados por el Banco Central de Reserva del Perú (BCRP), Sucursal Arequipa.
 
@@ -983,7 +983,7 @@ Otros Servicios & 5,364,266 & 17.1 & 2.6 \\
 
 \vspace{0.5cm}
 
-\niveltresnotoc{2.2. Cálculo de Coeficientes de Ubicación (LQ)}
+\niveltres{2.2. Cálculo de Coeficientes de Ubicación (LQ)}
 
 Los Coeficientes de Ubicación (LQ, por sus siglas en inglés) son un método indirecto para estimar la matriz insumo-producto regional a partir de la nacional. Este coeficiente mide el grado de especialización de una región en un sector económico específico en comparación con la economía nacional. Un LQ > 1 sugiere que la región es exportadora neta de los bienes o servicios de ese sector, mientras que un LQ < 1 indica que es importadora neta.
 
@@ -1020,9 +1020,9 @@ El resultado del LQ para el sector minero (2.66) confirma la alta especializaci�
 
 \vspace{0.5cm}
 
-\niveldosnotoc{Anexo 3: Desarrollo Matemático Detallado}
+\niveldos{Anexo 3: Desarrollo Matemático Detallado}
 
-\niveltresnotoc{3.1. El Modelo Insumo-Producto de Leontief}
+\niveltres{3.1. El Modelo Insumo-Producto de Leontief}
 
 El modelo de Leontief describe las interdependencias entre los diferentes sectores de una economía. La identidad contable fundamental del modelo establece que la producción total de un sector es igual a su demanda intermedia más su demanda final:
 
@@ -1053,7 +1053,7 @@ X = (I - A)^{-1} D
 
 La matriz $L = (I - A)^{-1}$ es la matriz inversa de Leontief o matriz de requerimientos directos e indirectos. Cada elemento $l_{ij}$ de esta matriz cuantifica el aumento total en la producción del sector $i$ que se necesita, directa e indirectamente, para satisfacer un aumento de una unidad monetaria en la demanda final del sector $j$. Esta matriz es la herramienta central para calcular los multiplicadores de producción, empleo e ingreso.
 
-\niveltresnotoc{3.2. Validación de Estabilidad del Modelo (Condiciones Hawkins-Simmons)}
+\niveltres{3.2. Validación de Estabilidad del Modelo (Condiciones Hawkins-Simmons)}
 
 Para garantizar que la matriz de coeficientes técnicos sea viable económicamente y tenga una inversa no negativa, se verifican las condiciones matemáticas de estabilidad espectral.
 
@@ -1076,7 +1076,7 @@ Condición de no-negatividad & Todos $a_{ij} \geq 0$ & $\checkmark$ Positiva (Cu
 
 \vspace{0.5cm}
 
-\niveltresnotoc{3.3. Código en Scilab para Cálculos Matriciales}
+\niveltres{3.3. Código en Scilab para Cálculos Matriciales}
 
 A continuación se presenta el código utilizado para los cálculos matriciales del modelo:
 
@@ -1115,3 +1115,4 @@ disp(delta_X);
 % ============================================================================
 
 \end{document}
+
