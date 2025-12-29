@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1766977296.39752 "c:/Users/USER/OneDrive/Desktop/2025-2/MATEMÁTICA/TIF_matemática/tif.tex" "tif.pdf" "tif" 1766977298.54806 0
+["pdflatex"] 1767026667.41245 "c:/Users/USER/OneDrive/Desktop/2025-2/MATEMÁTICA/TIF_matemática/tif.tex" "tif.pdf" "tif" 1767026669.38529 0
   "C:/Program Files/MiKTeX/tex/latex/listings/lstpatch.sty" 1741168182 353 9024412f43e92cd5b21fe9ded82d0610 ""
   "C:/Users/USER/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765047124 338208 012d198c3b15f5862bb38172a30f03d1 ""
   "C:/Users/USER/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1764804869 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -142,12 +142,12 @@
   "C:/Users/USER/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1700599895 12935 94a3291359b5f73ff1b19345a6983105 ""
   "C:/Users/USER/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "anexo.png" 1766960212 212562 5c2ff8e65dfdf9bc2c2c7020f155d622 ""
-  "c:/Users/USER/OneDrive/Desktop/2025-2/MATEMÁTICA/TIF_matemática/tif.tex" 1766977289 63947 0996505273229a3fb392e6be6c73a1a6 ""
+  "c:/Users/USER/OneDrive/Desktop/2025-2/MATEMÁTICA/TIF_matemática/tif.tex" 1767026666 64490 8e5ae00cb959a6d819361a1a47850928 ""
   "logo_unsa.png" 1762524879 172265 31c79c4250617bfce1c049189d5dd4d2 ""
-  "tif.aux" 1766977298 8514 7a987a22795bf420093bb7396adcd825 "pdflatex"
-  "tif.out" 1766977298 14923 b2d71b9a62cc9b94bc4da3daaaf95c6f "pdflatex"
-  "tif.tex" 1766977289 63947 0996505273229a3fb392e6be6c73a1a6 ""
-  "tif.toc" 1766977298 4764 37e16e7821e66926a849b107d78e2508 "pdflatex"
+  "tif.aux" 1767026669 8514 1df88de4d68ba8955e3a916b33bda1b4 "pdflatex"
+  "tif.out" 1767026669 14923 b2d71b9a62cc9b94bc4da3daaaf95c6f "pdflatex"
+  "tif.tex" 1767026666 64490 8e5ae00cb959a6d819361a1a47850928 ""
+  "tif.toc" 1767026669 4764 c8df9201adc79946733fde30af84df6e "pdflatex"
   (generated)
   "tif.aux"
   "tif.log"

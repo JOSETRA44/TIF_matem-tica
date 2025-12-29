@@ -38,16 +38,16 @@
 \contentsline {subsubsection}{4.2.1. Formulación de la Función de Bienestar Social (Variables: Salud, Educación)}{15}{section*.12}%
 \contentsline {subsubsection}{4.2.2. Definición de la Restricción Presupuestaria (Monto Canon 2024)}{15}{equation.0.11}%
 \contentsline {subsubsection}{4.2.3. Aplicación de Derivadas Parciales y Gradientes}{15}{equation.0.12}%
-\contentsline {subsubsection}{4.2.4. Resolución mediante Multiplicadores de Lagrange}{15}{Item.6}%
+\contentsline {subsubsection}{4.2.4. Resolución mediante Multiplicadores de Lagrange}{16}{Item.6}%
 \contentsline {subsubsection}{4.2.5. Validación del Óptimo: Matriz Hessiana y Determinante de Hess}{16}{equation.0.17}%
-\contentsline {subsection}{4.3. Análisis de Sensibilidad y Diferenciación}{16}{equation.0.19}%
-\contentsline {subsubsection}{4.3.1. Diferenciación Total ante cambios en el presupuesto del Canon}{16}{section*.13}%
+\contentsline {subsection}{4.3. Análisis de Sensibilidad y Diferenciación}{17}{equation.0.19}%
+\contentsline {subsubsection}{4.3.1. Diferenciación Total ante cambios en el presupuesto del Canon}{17}{section*.13}%
 \contentsline {subsubsection}{4.3.2. Interpretación económica de los resultados}{17}{equation.0.22}%
-\contentsline {section}{CAPÍTULO V: DISCUSIÓN}{17}{equation.0.22}%
-\contentsline {subsection}{5.1. Interpretación del impacto económico hallado vs. literatura previa}{17}{section*.14}%
+\contentsline {section}{CAPÍTULO V: DISCUSIÓN}{18}{equation.0.22}%
+\contentsline {subsection}{5.1. Interpretación del impacto económico hallado vs. literatura previa}{18}{section*.14}%
 \contentsline {subsection}{5.2. Análisis de la eficiencia en la asignación de recursos propuesta}{18}{section*.14}%
 \contentsline {section}{CAPÍTULO VI: CONCLUSIONES Y RECOMENDACIONES}{18}{section*.14}%
 \contentsline {subsection}{6.1. Conclusiones}{18}{section*.15}%
 \contentsline {subsection}{6.2. Recomendaciones}{19}{Item.10}%
-\contentsline {section}{REFERENCIAS BIBLIOGRÁFICAS}{19}{Item.14}%
+\contentsline {section}{REFERENCIAS BIBLIOGRÁFICAS}{20}{Item.14}%
 \contentsline {section}{ANEXOS}{24}{Item.14}%
