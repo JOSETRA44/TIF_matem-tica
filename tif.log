@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.28)  29 DEC 2025 13:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.28)  29 DEC 2025 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,7 +560,7 @@ Package hyperref Info: Link coloring OFF on input line 139.
 \openout3 = `tif.out'.
 
 \c@lstlisting=\count323
-<logo_unsa.png, id=189, 133.9404pt x 175.3752pt>
+<logo_unsa.png, id=197, 133.9404pt x 175.3752pt>
 File: logo_unsa.png Graphic file (type png)
 <use logo_unsa.png>
 Package pdftex.def Info: logo_unsa.png  used on input line 165.
@@ -659,59 +659,76 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 465.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 487.
-(C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [12{C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+[12] [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 520.
+(hyperref)                removing `math shift' on input line 522.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 520.
+(hyperref)                removing `superscript' on input line 522.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 520.
+(hyperref)                removing `math shift' on input line 522.
 
-[13] [14]
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 586.
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 527.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 529.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 529.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 539.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 539.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <0.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 539.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <0.6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 539.
+[14]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 555.
 
 [15] [16]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 672.
-
-
-Overfull \hbox (38.69482pt too wide) in paragraph at lines 694--695
-[]\T1/ptm/m/n/12 Sustituyendo la pri-me-ra en la se-gun-da: $\OML/ztmcm/m/it/12 ds \OT1/ztmcm/m/n/12 + 1[]5\OML/ztmcm/m/it/12 ds \OT1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 dC \OMS/ztmcm/m/n/12 ) \OT1/ztmcm/m/n/12 2[]5\OML/ztmcm/m/it/12 ds \OT1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 dC \OMS/ztmcm/m/n/12 ) []$\T1/ptm/m/n/12 . 
- []
+(hyperref)                be the same. Added a new anchor on input line 607.
 
 [17]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 708.
+(hyperref)                be the same. Added a new anchor on input line 693.
 
 [18]
+Overfull \hbox (38.69482pt too wide) in paragraph at lines 715--716
+[]\T1/ptm/m/n/12 Sustituyendo la pri-me-ra en la se-gun-da: $\OML/ztmcm/m/it/12 ds \OT1/ztmcm/m/n/12 + 1[]5\OML/ztmcm/m/it/12 ds \OT1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 dC \OMS/ztmcm/m/n/12 ) \OT1/ztmcm/m/n/12 2[]5\OML/ztmcm/m/it/12 ds \OT1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 dC \OMS/ztmcm/m/n/12 ) []$\T1/ptm/m/n/12 . 
+ []
+
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 722.
+(hyperref)                be the same. Added a new anchor on input line 729.
 
-[19] [20] [21] [22] [23] [24
+[19]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 743.
+
+[20] [21] [22] [23] [24] [25] [26
 
 
-] [25]
-<anexo.png, id=385, 2409.0pt x 1606.0pt>
+] [27]
+<anexo.png, id=401, 2409.0pt x 1606.0pt>
 File: anexo.png Graphic file (type png)
 <use anexo.png>
-Package pdftex.def Info: anexo.png  used on input line 990.
+Package pdftex.def Info: anexo.png  used on input line 1011.
 (pdftex.def)             Requested size: 385.02577pt x 256.67119pt.
- [26] [27 <./anexo.png>] [28] [29]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1096.
- [30] (tif.aux
+ [28] [29 <./anexo.png>] [30] [31]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1117.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1117.
+ (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [32{C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (tif.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -720,20 +737,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `tif.out' has not changed.
-(rerunfilecheck)             Checksum: B2D71B9A62CC9B94BC4DA3DAAAF95C6F;14923.
+(rerunfilecheck)             Checksum: DA1F778B72146928A50EDAD559442CF9;15619.
  ) 
 Here is how much of TeX's memory you used:
- 16650 strings out of 474479
- 262215 string characters out of 5744062
+ 16716 strings out of 474479
+ 263059 string characters out of 5744062
  2097542 words of memory out of 5000000
- 38541 multiletter control sequences out of 15000+600000
- 642563 words of font info for 159 fonts, out of 8000000 for 9000
+ 38591 multiletter control sequences out of 15000+600000
+ 666666 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,16n,79p,1035b,1150s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tif.pdf (31 pages, 614420 bytes).
+ 75i,16n,79p,1035b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tif.pdf (33 pages, 594721 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 427 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
+ 443 words of extra memory for PDF output out of 10000 (max. 10000000)
 
