@@ -460,21 +460,21 @@ Se ha construido una tabla Insumo-Producto agregada para 4 sectores. La tabla si
 
 \begin{table}[H]
 \centering
-\caption{Matriz de Transacciones Intersectoriales Hipotética (Millones de S/.)}
+\caption{Matriz de Insumo producto regional ajustada, Arequipa 2024 (Millones de S/.)}
 \scriptsize
 \begin{tabular}{l*{9}{c}}
 \toprule
 \textbf{De / A} & \textbf{Agr} & \textbf{Min} & \textbf{Mfr} & \textbf{Ele} & \textbf{Cns} & \textbf{Com} & \textbf{Trn} & \textbf{Tel} & \textbf{Srv} \\
 \midrule
-\textbf{Agricultura} & 0.15 & 0.10 & 0.20 & 0.08 & 0.05 & 0.12 & 0.18 & 0.15 & 0.13 \\
-\textbf{Minería} & 0.08 & 0.25 & 0.12 & 0.10 & 0.15 & 0.08 & 0.12 & 0.10 & 0.09 \\
-\textbf{Manufactura} & 0.25 & 0.18 & 0.35 & 0.20 & 0.22 & 0.25 & 0.22 & 0.20 & 0.18 \\
-\textbf{Electricidad} & 0.05 & 0.06 & 0.08 & 0.18 & 0.10 & 0.05 & 0.08 & 0.07 & 0.06 \\
-\textbf{Construcción} & 0.12 & 0.14 & 0.15 & 0.12 & 0.20 & 0.15 & 0.18 & 0.14 & 0.13 \\
-\textbf{Comercio} & 0.10 & 0.09 & 0.10 & 0.09 & 0.12 & 0.15 & 0.10 & 0.11 & 0.10 \\
-\textbf{Transporte} & 0.15 & 0.16 & 0.16 & 0.15 & 0.16 & 0.14 & 0.18 & 0.15 & 0.14 \\
-\textbf{Telecomunic.} & 0.08 & 0.07 & 0.08 & 0.07 & 0.08 & 0.09 & 0.08 & 0.12 & 0.08 \\
-\textbf{Otros Serv.} & 0.20 & 0.20 & 0.20 & 0.20 & 0.20 & 0.20 & 0.20 & 0.20 & 0.25 \\
+\textbf{Agricultura} & 95.5 & 0.0 & 362.6 & 0.0 & 0.2 & 0.3 & 0.0 & 0.0 & 45.7 \\
+\textbf{Minería} & 2.3 & 205.6 & 614.3 & 34.3 & 92.1 & 0.4 & 0.4 & 0.0 & 10.1 \\
+\textbf{Manufactura} & 141.4 & 218.7 & 907.2 & 40.4 & 411.9 & 112.8 & 227.8 & 63.6 & 795.6 \\
+\textbf{Electricidad} & 1.3 & 22.1 & 26.2 & 29.7 & 0.3 & 10.2 & 8.3 & 2.7 & 33.4 \\
+\textbf{Construcción} & 0.0 & 9.0 & 1.4 & 3.7 & 27.1 & 1.1 & 0.0 & 5.5 & 61.7 \\
+\textbf{Comercio} & 0.1 & 6.6 & 3.1 & 1.8 & 0.0 & 5.2 & 66.6 & 0.7 & 28.6 \\
+\textbf{Transporte} & 12.7 & 96.9 & 46.9 & 17.8 & 9.3 & 215.5 & 139.2 & 8.8 & 97.8 \\
+\textbf{Telecomunic.} & 0.2 & 2.4 & 3.3 & 1.4 & 1.2 & 25.6 & 5.2 & 111.7 & 128.2 \\
+\textbf{Otros Serv.} & 19.7 & 90.1 & 103.5 & 27.1 & 44.0 & 197.0 & 70.0 & 125.1 & 719.9 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -496,10 +496,15 @@ La Matriz A resultante es:
 
 \begin{equation}
 A = \begin{bmatrix}
-0.025 & 0.010 & 0.125 & 0.010 \\
-0.005 & 0.040 & 0.033 & 0.015 \\
-0.100 & 0.060 & 0.083 & 0.035 \\
-0.150 & 0.100 & 0.167 & 0.075
+0.048 & 0.000 & 0.068 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.005 \\
+0.001 & 0.019 & 0.115 & 0.071 & 0.030 & 0.000 & 0.000 & 0.000 & 0.001 \\
+0.071 & 0.020 & 0.170 & 0.084 & 0.132 & 0.030 & 0.105 & 0.037 & 0.087 \\
+0.001 & 0.002 & 0.005 & 0.062 & 0.000 & 0.003 & 0.004 & 0.002 & 0.004 \\
+0.000 & 0.001 & 0.000 & 0.008 & 0.009 & 0.000 & 0.000 & 0.003 & 0.007 \\
+0.000 & 0.001 & 0.001 & 0.004 & 0.000 & 0.001 & 0.031 & 0.000 & 0.003 \\
+0.006 & 0.009 & 0.009 & 0.037 & 0.003 & 0.057 & 0.064 & 0.005 & 0.011 \\
+0.000 & 0.000 & 0.001 & 0.003 & 0.000 & 0.007 & 0.002 & 0.064 & 0.014 \\
+0.010 & 0.008 & 0.019 & 0.056 & 0.014 & 0.052 & 0.032 & 0.072 & 0.079
 \end{bmatrix}
 \end{equation}
 

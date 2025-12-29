@@ -46,8 +46,8 @@
 \contentsline {section}{CAPÍTULO V: DISCUSIÓN}{18}{equation.0.22}%
 \contentsline {subsection}{5.1. Interpretación del impacto económico hallado vs. literatura previa}{18}{section*.14}%
 \contentsline {subsection}{5.2. Análisis de la eficiencia en la asignación de recursos propuesta}{18}{section*.14}%
-\contentsline {section}{CAPÍTULO VI: CONCLUSIONES Y RECOMENDACIONES}{18}{section*.14}%
-\contentsline {subsection}{6.1. Conclusiones}{18}{section*.15}%
+\contentsline {section}{CAPÍTULO VI: CONCLUSIONES Y RECOMENDACIONES}{19}{section*.14}%
+\contentsline {subsection}{6.1. Conclusiones}{19}{section*.15}%
 \contentsline {subsection}{6.2. Recomendaciones}{19}{Item.10}%
 \contentsline {section}{REFERENCIAS BIBLIOGRÁFICAS}{20}{Item.14}%
 \contentsline {section}{ANEXOS}{24}{Item.14}%
