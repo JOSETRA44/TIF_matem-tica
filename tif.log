@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.28)  29 DEC 2025 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.28)  29 DEC 2025 17:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,7 +560,7 @@ Package hyperref Info: Link coloring OFF on input line 139.
 \openout3 = `tif.out'.
 
 \c@lstlisting=\count323
-<logo_unsa.png, id=202, 133.9404pt x 175.3752pt>
+<logo_unsa.png, id=194, 133.9404pt x 175.3752pt>
 File: logo_unsa.png Graphic file (type png)
 <use logo_unsa.png>
 Package pdftex.def Info: logo_unsa.png  used on input line 165.
@@ -659,61 +659,69 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 465.
-[12] [13] [14]
+[12] [13]
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 562.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 522.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 522.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 522.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 539.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 565.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 541.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 565.
-[15]
-LaTeX Font Info:    Calculating math sizes for size <> on input line 575.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 541.
+[14]
+LaTeX Font Info:    Calculating math sizes for size <> on input line 551.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 575.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <0.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 575.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <0.6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 575.
- [16] [17]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
+ [15]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 616.
+(hyperref)                be the same. Added a new anchor on input line 592.
 
-[18]
+[16] [17] [18]
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 669.
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 696.
 
 [19]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 705.
+(hyperref)                be the same. Added a new anchor on input line 753.
 
 [20]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 764.
+(hyperref)                be the same. Added a new anchor on input line 767.
 
-[21]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 778.
-
-[22] [23] [24] [25] [26] [27
+[21] [22] [23] [24] [25] [26] [27
 
 
 ] [28]
-<anexo.png, id=410, 2409.0pt x 1606.0pt>
+<anexo.png, id=404, 2409.0pt x 1606.0pt>
 File: anexo.png Graphic file (type png)
 <use anexo.png>
-Package pdftex.def Info: anexo.png  used on input line 1046.
+Package pdftex.def Info: anexo.png  used on input line 1035.
 (pdftex.def)             Requested size: 385.02577pt x 256.67119pt.
  [29] [30 <./anexo.png>] [31] [32]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1152.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1152.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1141.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1141.
  (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [33{C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (tif.aux
+) [33{C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [34] (tif.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -722,20 +730,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `tif.out' has not changed.
-(rerunfilecheck)             Checksum: B597F4977BFD73089E24191BFA375ABA;15121.
+(rerunfilecheck)             Checksum: 8466751C2C3991353F8A0E0B8A7D3F85;15146.
  ) 
 Here is how much of TeX's memory you used:
- 16712 strings out of 474479
- 263092 string characters out of 5744062
- 2097542 words of memory out of 5000000
- 38593 multiletter control sequences out of 15000+600000
- 664562 words of font info for 205 fonts, out of 8000000 for 9000
+ 16724 strings out of 474479
+ 263148 string characters out of 5744062
+ 2149542 words of memory out of 5000000
+ 38591 multiletter control sequences out of 15000+600000
+ 667773 words of font info for 214 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,16n,79p,1035b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,79p,1058b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tif.pdf (34 pages, 595784 bytes).
+Output written on tif.pdf (35 pages, 595903 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 451 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 557 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
+ 435 words of extra memory for PDF output out of 10000 (max. 10000000)
 
