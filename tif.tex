@@ -420,10 +420,10 @@ La población está constituida por el conjunto de todas las actividades económ
 La técnica principal será el análisis documental de fuentes secundarias. Los datos para la construcción de la Matriz Insumo-Producto regional se obtendrán y adaptarán a partir de:
 
 \begin{itemize}[leftmargin=*]
-\item La Matriz Insumo-Producto Nacional más reciente publicada por el INEI.
-\item Datos del Valor Agregado Bruto (VAB) por sector para Arequipa, del BCRP e INEI.
-\item Reportes de transferencias mineras y producción del Ministerio de Energía y Minas (MINEM).
-\item Proyecciones macroeconómicas del BCRP y registros del Portal de Transparencia Económica (MEF).
+\item La Matriz Insumo-Producto Nacional y las Cuentas de Oferta y Utilización (COU) más recientes publicadas por el INEI (2024).
+\item Datos del Valor Agregado Bruto (VAB) por sector para Arequipa, del BCRP e INEI, utilizados para el cálculo de los coeficientes de participación regional.
+\item Datos de empleo y producción minera del Ministerio de Energía y Minas (MINEM).
+\item Proyecciones macroeconómicas y registros del Portal de Transparencia Económica (MEF).
 \end{itemize}
 
 Los instrumentos serán las propias estructuras matemáticas: la tabla Insumo-Producto regionalizada de 9x9 y el sistema de ecuaciones del modelo de optimización. El procesamiento se realizará con software como Microsoft Excel para la tabulación de datos y Scilab o un lenguaje de programación similar para los cálculos matriciales y la resolución del sistema de ecuaciones.
@@ -433,11 +433,11 @@ Los instrumentos serán las propias estructuras matemáticas: la tabla Insumo-Pr
 El análisis se desarrollará en tres fases principales:
 
 \begin{enumerate}[leftmargin=*]
-\item \textbf{Fase 1: Construcción del Modelo Insumo-Producto.}
+\item \textbf{Fase 1: Construcción y regionalización del modelo.}
 \begin{itemize}
-\item Recopilación de las Cuentas de Oferta y Utilización (COU): Obtención de las tablas oficiales del INEI actualizadas al periodo 2024, utilizando el Valor Agregado Bruto (VAB) regional para ajustar los niveles de producción.
-\item Regionalización mediante el método FLQ: Generación de la Matriz Insumo-Producto para Arequipa aplicando el Coeficiente de Ubicación de Flegg (FLQ), técnica que permite ajustar los coeficientes técnicos nacionales considerando el tamaño relativo de la economía regional.
-\item Cálculo de la matriz de requerimientos totales: Determinación de la Matriz Inversa de Leontief para hallar el vector de impacto máximo, cuantificando cuánto debe crecer la producción total para satisfacer un shock en la demanda minera.
+\item Recopilación de las COU nacionales y datos del VAB regional de Arequipa 2024.
+\item Regionalización de la matriz nacional mediante el método del Coeficiente de Ubicación de Flegg (FLQ), ajustando los coeficientes técnicos para reflejar la capacidad productiva real de la región.
+\item Cálculo de la Matriz Inversa de Leontief para obtener el vector de requerimientos totales (sector máximo), permitiendo identificar el impacto máximo de la minería sobre la producción regional.
 \end{itemize}
 
 \item \textbf{Fase 2: Formulación y Resolución del Modelo de Optimización.}
@@ -778,7 +778,7 @@ El modelo de optimización propone una asignación de 40\% a Salud y 60\% a Educ
 \niveldos{6.1. Conclusiones}
 
 \begin{enumerate}[leftmargin=*]
-\item La aplicación del modelo Insumo-Producto permitió cuantificar el impacto económico de la minería en Arequipa, revelando un multiplicador de producción total de 1.080 que evidencia débiles encadenamientos con otros sectores de la economía regional. Este bajo multiplicador subraya la necesidad de políticas que fortalezcan los vínculos intersectoriales del sector minero.
+\item La aplicación del modelo Insumo-Producto, regionalizado mediante la técnica del Coeficiente de Ubicación de Flegg (FLQ) y las COU 2024, permitió cuantificar un multiplicador de producción de 1.080. Este resultado confirma una estructura de ``Enclave'', donde el vector de requerimientos totales muestra que el impacto se concentra en el propio sector minero, con una integración limitada hacia la manufactura y agricultura local.
 
 \item El modelo de optimización mediante Multiplicadores de Lagrange proporcionó una solución cuantitativa para la asignación de recursos del Canon Minero. Bajo los supuestos de una función de bienestar Cobb-Douglas con mayor peso en educación, la distribución óptima de un presupuesto de 1,207 millones de soles fue de 483 millones (40\%) para Salud y 724 millones (60\%) para Educación.
 
