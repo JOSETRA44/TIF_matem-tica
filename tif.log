@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.30)  30 DEC 2025 09:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.30)  30 DEC 2025 09:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,57 +655,57 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 [9] [10] [11]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 457.
+(hyperref)                be the same. Added a new anchor on input line 456.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 465.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 464.
 [12] [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 522.
+(hyperref)                removing `math shift' on input line 521.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 522.
+(hyperref)                removing `superscript' on input line 521.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 522.
+(hyperref)                removing `math shift' on input line 521.
 
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 539.
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 538.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 541.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 540.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 541.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 540.
 [14]
-LaTeX Font Info:    Calculating math sizes for size <> on input line 551.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 550.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 550.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <0.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 550.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <0.6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 550.
  [15]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 592.
+(hyperref)                be the same. Added a new anchor on input line 591.
 
 [16] [17] [18]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 696.
+(hyperref)                be the same. Added a new anchor on input line 695.
 
 [19]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 753.
+(hyperref)                be the same. Added a new anchor on input line 752.
 
 [20]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 767.
+(hyperref)                be the same. Added a new anchor on input line 766.
 
 [21] [22] [23] [24] [25] [26] [27
 
@@ -714,11 +714,11 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 <anexo.png, id=404, 2409.0pt x 1606.0pt>
 File: anexo.png Graphic file (type png)
 <use anexo.png>
-Package pdftex.def Info: anexo.png  used on input line 1035.
+Package pdftex.def Info: anexo.png  used on input line 1034.
 (pdftex.def)             Requested size: 385.02577pt x 256.67119pt.
  [29] [30 <./anexo.png>] [31] [32]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1141.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1141.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1140.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1140.
  (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [33{C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [34] (tif.aux
@@ -741,7 +741,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,16n,79p,1058b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tif.pdf (35 pages, 596214 bytes).
+Output written on tif.pdf (35 pages, 596076 bytes).
 PDF statistics:
  557 PDF objects out of 1000 (max. 8388607)
  129 named destinations out of 1000 (max. 500000)

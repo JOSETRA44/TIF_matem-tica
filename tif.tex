@@ -244,11 +244,11 @@
 
 La región de Arequipa, ubicada en el sur del Perú, ha experimentado en las últimas décadas un crecimiento económico impulsado significativamente por la actividad minera. Este sector no solo representa una porción sustancial del Producto Bruto Interno (PBI) regional, sino que también genera importantes flujos de ingresos fiscales a través del Canon y las Regalías Mineras. Sin embargo, la bonanza económica derivada de la minería coexiste con persistentes desafíos sociales y ambientales, así como con un debate público sobre la eficacia y equidad en la distribución y uso de los recursos generados.
 
-La complejidad de este escenario demanda un análisis que trascienda la mera descripción cualitativa. Es imperativo emplear herramientas cuantitativas rigurosas que permitan modelar las interdependencias económicas y evaluar objetivamente las políticas de asignación de recursos. Este trabajo de investigación se propone abordar esta necesidad mediante la aplicación de dos potentes instrumentos matemáticos: el modelo Insumo-Producto de Wassily Leontief y la teoría de optimización con restricciones a través de los Multiplicadores de Lagrange.
+La complejidad de este escenario demanda un análisis que trascienda la mera descripción cualitativa. Es imperativo emplear herramientas cuantitativas rigurosas que permitan modelar las interdependencias económicas y evaluar objetivamente las políticas de asignación de recursos. Este trabajo de investigación aborda esta necesidad mediante la aplicación de dos potentes instrumentos matemáticos: el modelo Insumo-Producto de Wassily Leontief y la teoría de optimización con restricciones a través de los Multiplicadores de Lagrange (lambda).
 
-El objetivo principal es doble. Primero, se busca cuantificar el impacto multiplicador de la minería en la economía arequipeña, identificando cómo la demanda del sector minero se propaga a través de otros sectores como la construcción, los servicios y la agricultura. Para ello, se construirá una matriz Insumo-Producto regional para el año 2024. Segundo, se formulará y resolverá un problema de optimización para determinar una asignación teóricamente ``óptima'' de los fondos del Canon Minero entre sectores clave para el bienestar social, como salud y educación, maximizando una función de bienestar social sujeta a la restricción presupuestaria del canon disponible.
+El objetivo principal es doble. Primero, se busca cuantificar el impacto multiplicador de la minería en la economía arequipeña, identificando cómo la demanda del sector minero se propaga a través de los 9 sectores productivos clave de la región. Para ello, se construye una matriz Insumo-Producto regional con datos oficiales del periodo 2024. Segundo, se formula y resuelve un problema de optimización para determinar la asignación óptima de los 1,207.25 millones de soles provenientes del Canon Minero entre sectores estratégicos para el bienestar social, como salud y educación, maximizando una función de bienestar social sujeta a la restricción presupuestaria real.
 
-Este estudio, enmarcado en el curso de Matemáticas II, no solo busca cumplir con un requisito académico, sino también demostrar la aplicabilidad directa de conceptos como las derivadas parciales, el álgebra matricial, los determinantes, la diferenciación total y la optimización lagrangiana en la resolución de problemas económicos reales y de alta relevancia para la gestión pública y el desarrollo regional.
+Este estudio, enmarcado en el curso de Matemáticas II, no solo busca cumplir con un requisito académico, sino también demostrar la aplicabilidad directa de conceptos como las derivadas parciales, el álgebra matricial, los determinantes, la diferenciación total y la optimización lagrangiana (lambda) en la resolución de problemas económicos reales y de alta relevancia para la gestión pública y el desarrollo regional de Arequipa.
 
 % ============================================================================
 % CAPÍTULO I: PLANTEAMIENTO DEL PROBLEMA
@@ -423,10 +423,9 @@ El análisis se desarrollará en tres fases principales:
 \begin{enumerate}[leftmargin=*]
 \item \textbf{Fase 1: Construcción del Modelo Insumo-Producto.}
 \begin{itemize}
-\item Recopilación de la Matriz Insumo-Producto Nacional y datos del VAB de Arequipa.
-\item Regionalización de la matriz nacional utilizando el método de los coeficientes de ubicación (LQ) para estimar la Matriz Insumo-Producto de Arequipa 2024.
-\item Cálculo de la Matriz de Coeficientes Técnicos (A) y el vector de Demanda Final (d).
-\item Cálculo de la Matriz Inversa de Leontief $(I-A)^{-1}$ y los multiplicadores de producción.
+\item Recopilación de las Cuentas de Oferta y Utilización (COU): Obtención de las tablas oficiales del INEI actualizadas al periodo 2024, utilizando el Valor Agregado Bruto (VAB) regional para ajustar los niveles de producción.
+\item Regionalización mediante el método FLQ: Generación de la Matriz Insumo-Producto para Arequipa aplicando el Coeficiente de Ubicación de Flegg (FLQ), técnica que permite ajustar los coeficientes técnicos nacionales considerando el tamaño relativo de la economía regional.
+\item Cálculo de la matriz de requerimientos totales: Determinación de la Matriz Inversa de Leontief para hallar el vector de impacto máximo, cuantificando cuánto debe crecer la producción total para satisfacer un shock en la demanda minera.
 \end{itemize}
 
 \item \textbf{Fase 2: Formulación y Resolución del Modelo de Optimización.}
