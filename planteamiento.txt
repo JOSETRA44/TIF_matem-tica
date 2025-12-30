@@ -1,0 +1,29 @@
+CAPÍTULO I: PLANTEAMIENTO DEL PROBLEMA
+
+1.1. Descripción del problema
+
+1.1.1. La minería en el contexto macroeconómico de Arequipa La minería formal constituye un pilar fundamental en el Valor Agregado Bruto (VAB) regional, representando aproximadamente el 32 % del Producto Bruto Interno (PBI) de Arequipa en el año 2024. Proyectos emblemáticos como "Sociedad Minera Cerro Verde" han colocado a la región como escenario global de la extracción y producción de cobre. Sin embargo, esta dependencia genera una vulnerabilidad estructural conocida por muchos economistas como "Modelo de Enclave Extractivo": un esquema donde la minería trabaja en la extracción de grandes cantidades de minerales separada de la dinámica de la economía local.
+
+El problema radica en que el crecimiento del PBI regional, impulsado por el sector extractivo, no se traduce automáticamente en una diversificación productiva. Aplicando la lógica del modelo insumo-producto, observamos que los multiplicadores de empleo y demanda interna no están operando a su máxima capacidad debido a que los encadenamientos productivos son débiles, tal como lo demuestra un multiplicador de producción real de apenas 1.080 para el sector.
+
+Las mineras formales de Arequipa suelen adquirir insumos importados o de la capital, y el cobre se exporta con bajo nivel de procesamiento local. Aunque se estima que la minería genera entre 30 mil y 35 mil empleos directos en la región, el impulso no se propaga con la fluidez teórica esperada hacia los sectores secundarios (manufactura) ni hacia los terciarios avanzados. Esto deja a la economía arequipeña expuesta: cuando caen los precios globales o la producción —como la disminución registrada en el primer semestre de 2024— el impacto es severo porque no existen otros sectores robustos que compensen la caída.
+
+1.1.2. Problemática en la asignación eficiente del Canon y Regalías El principal mecanismo de redistribución de la riqueza minera hacia la población es el Canon Minero, que corresponde al 50 % del impuesto a la renta pagado por las empresas mineras. Para el periodo 2024, Arequipa ha registrado transferencias por Canon y Regalías que ascienden a 1,207.25 millones de soles. La problemática central radica en la gestión de estos fondos. A menudo, la asignación de recursos se basa en criterios políticos o de corto plazo, sin un análisis técnico que garantice la maximización del bienestar social a largo plazo. Existe una percepción generalizada de que los fondos no se invierten de manera óptima para cerrar brechas en servicios básicos como salud, educación e infraestructura, lo que genera descontento social y cuestiona los beneficios reales de la minería para el ciudadano común.
+
+1.2. Formulación de preguntas
+
+1.2.1. Pregunta general ¿De qué manera la aplicación de un modelo Insumo-Producto y técnicas de optimización matemática permite evaluar el impacto económico de la minería y proponer una asignación eficiente de los recursos del Canon Minero para maximizar el bienestar social en la región de Arequipa durante el periodo 2024?
+
+1.2.2. Preguntas específicas ¿Cuál es la estructura de interdependencia sectorial de la economía de Arequipa y cuáles son los multiplicadores de producción generados por el sector minero en 2024? ¿Cómo se puede formular una función de bienestar social que represente las prioridades de la región en términos de salud y educación? ¿Cuál sería la distribución óptima de los 1,207.25 millones de soles del Canon Minero 2024 entre salud y educación que maximice la función de bienestar social, dada la restricción presupuestaria? ¿Cuál es la sensibilidad de la asignación óptima de recursos ante cambios marginales en el monto total del Canon Minero?
+
+1.3. Objetivos de la investigación
+
+1.3.1. Objetivo general Evaluar y analizar el impacto económico y social de la minería formal en Arequipa en el periodo 2024, mediante la aplicación de un modelo Insumo-Producto y un modelo de optimización de recursos.
+
+1.3.2. Objetivos específicos Construir una Matriz Insumo-Producto para la economía de Arequipa en 2024 para determinar los multiplicadores de producción del sector minero. Formular un modelo de optimización con restricciones para determinar la asignación óptima de los recursos del Canon Minero entre los sectores de salud y educación. Resolver el modelo de optimización utilizando el método de los Multiplicadores de Lagrange (lambda) y validar la solución mediante el criterio de la Matriz Hessiana. Realizar un análisis de sensibilidad utilizando la diferenciación total para interpretar económicamente el valor del multiplicador de Lagrange (lambda).
+
+1.4. Justificación e importancia
+
+1.4.1. Justificación teórica (Uso de modelos matemáticos) Este estudio se justifica teóricamente por el uso de herramientas cuantitativas avanzadas para analizar un problema económico complejo. El modelo Insumo-Producto proporciona un marco coherente para entender las interrelaciones sectoriales, superando los análisis de impacto directo. La teoría de la optimización, por su parte, permite pasar de un análisis positivo (lo que es) a un análisis normativo (lo que debería ser), ofreciendo una base racional y objetiva para la toma de decisiones de política pública, en contraste con decisiones puramente discrecionales.
+
+1.4.2. Justificación práctica (Relevancia para la gestión pública 2024) La relevancia práctica de esta investigación es inmediata. Los resultados pueden servir como un insumo técnico para los tomadores de decisiones del Gobierno Regional de Arequipa y los gobiernos locales al momento de formular sus presupuestos de inversión para el año fiscal 2025, utilizando los fondos del Canon 2024. Al proponer una asignación basada en la maximización del bienestar, el estudio ofrece una guía para mejorar la eficiencia del gasto público y, potencialmente, mitigar conflictos sociales al demostrar un esfuerzo por traducir la riqueza minera en desarrollo humano tangible.
