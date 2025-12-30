@@ -393,15 +393,15 @@ Las condiciones de primer orden para un óptimo se obtienen al igualar a cero la
 
 \niveldos{3.1. Tipo y diseño de investigación}
 
-La presente investigación es de tipo cuantitativa y aplicada. Es cuantitativa porque se basa en la medición numérica y el análisis estadístico y matemático para establecer patrones de comportamiento y probar hipótesis. Es aplicada porque busca resolver un problema práctico y específico: la evaluación del impacto de la minería y la optimización de la asignación de sus rentas en Arequipa. El diseño es no experimental, transeccional y de carácter descriptivo-correlacional. Es no experimental porque no se manipulan variables, sino que se observan y analizan en su contexto natural. Es transeccional porque los datos se recolectan en un único momento del tiempo (proyecciones para 2024). Finalmente, es descriptivo-correlacional, ya que describe la estructura económica y busca establecer relaciones (correlaciones) entre los sectores a través del modelo Insumo-Producto.
+La presente investigación es de tipo cuantitativa y aplicada. Es cuantitativa porque se basa en la medición numérica y el análisis estadístico y matemático para establecer patrones de comportamiento y probar hipótesis. Es aplicada porque busca resolver un problema práctico y específico: la evaluación del impacto de la minería y la optimización de la asignación de sus rentas en Arequipa. El diseño es no experimental, transeccional y de carácter descriptivo-correlacional. Es no experimental porque no se manipulan variables, sino que se observan y analizan en su contexto natural. Es transeccional porque los datos se recolectan en un único momento del tiempo (datos oficiales y proyecciones para 2024). Finalmente, es descriptivo-correlacional, ya que describe la estructura económica y busca establecer relaciones (correlaciones) entre los sectores a través del modelo Insumo-Producto.
 
 \niveldos{3.2. Unidad de análisis}
 
-Las unidades de análisis son los sectores económicos de la región de Arequipa. Para la construcción del modelo Insumo-Producto, estos sectores serán agregados en categorías representativas para simplificar el análisis sin perder la esencia de las interrelaciones. Los sectores considerados serán: 1) Minería, 2) Agricultura, 3) Industria y Construcción, y 4) Servicios y Gobierno.
+Las unidades de análisis son los sectores económicos de la región de Arequipa. Para la construcción del modelo Insumo-Producto, la economía se ha desagregado en 9 sectores específicos para garantizar la precisión del análisis y la interrelación sectorial. Los sectores considerados son: 1) Agricultura, 2) Minería, 3) Manufactura, 4) Electricidad, 5) Construcción, 6) Comercio, 7) Transporte, 8) Telecomunicaciones y 9) Otros Servicios.
 
 \niveldos{3.3. Población y muestra}
 
-La población está constituida por el conjunto de todas las actividades económicas que conforman el Producto Bruto Interno (PBI) de la región Arequipa. Dado que el modelo Insumo-Producto requiere el análisis de la totalidad de las interacciones económicas, no se trabaja con una muestra, sino con la población completa de sectores económicos, aunque agregados como se mencionó en el punto anterior. Por lo tanto, el estudio es de naturaleza censal a nivel sectorial.
+La población está constituida por el conjunto de todas las actividades económicas que conforman el Producto Bruto Interno (PBI) de la región Arequipa. Dado que el modelo Insumo-Producto requiere el análisis de la totalidad de las interacciones económicas, no se trabaja con una muestra, sino con la población completa de sectores económicos, bajo la desagregación mencionada en el punto anterior. Por lo tanto, el estudio es de naturaleza censal a nivel sectorial.
 
 \niveldos{3.4. Técnicas e instrumentos de recolección de datos}
 
@@ -410,11 +410,11 @@ La técnica principal será el análisis documental de fuentes secundarias. Los 
 \begin{itemize}[leftmargin=*]
 \item La Matriz Insumo-Producto Nacional más reciente publicada por el INEI.
 \item Datos del Valor Agregado Bruto (VAB) por sector para Arequipa, del BCRP e INEI.
-\item Datos de empleo y producción minera del Ministerio de Energía y Minas (MINEM).
-\item Proyecciones macroeconómicas del BCRP y consultoras privadas.
+\item Reportes de transferencias mineras y producción del Ministerio de Energía y Minas (MINEM).
+\item Proyecciones macroeconómicas del BCRP y registros del Portal de Transparencia Económica (MEF).
 \end{itemize}
 
-Los instrumentos serán las propias estructuras matemáticas: la tabla Insumo-Producto regionalizada y el sistema de ecuaciones del modelo de optimización. El procesamiento se realizará con software como Microsoft Excel para la tabulación de datos y Scilab o un lenguaje de programación similar para los cálculos matriciales y la resolución del sistema de ecuaciones.
+Los instrumentos serán las propias estructuras matemáticas: la tabla Insumo-Producto regionalizada de 9x9 y el sistema de ecuaciones del modelo de optimización. El procesamiento se realizará con software como Microsoft Excel para la tabulación de datos y Scilab o un lenguaje de programación similar para los cálculos matriciales y la resolución del sistema de ecuaciones.
 
 \niveldos{3.5. Procedimiento de análisis de datos}
 
@@ -432,8 +432,8 @@ El análisis se desarrollará en tres fases principales:
 \item \textbf{Fase 2: Formulación y Resolución del Modelo de Optimización.}
 \begin{itemize}
 \item Definición de una función de bienestar social (ej. tipo Cobb-Douglas) con variables de gasto en Salud (s) y Educación (e).
-\item Establecimiento de la restricción presupuestaria basada en el monto proyectado del Canon Minero 2024.
-\item Planteamiento de la función Lagrangiana.
+\item Establecimiento de la restricción presupuestaria basada en el monto real de transferencias por Canon y Regalías 2024.
+\item Planteamiento de la función Lagrangiana ($\mathcal{L}$).
 \item Resolución del sistema de ecuaciones derivado de las condiciones de primer orden para hallar la asignación óptima $(s^*, e^*)$.
 \item Verificación de que la solución es un máximo utilizando el criterio de la Matriz Hessiana Orlada.
 \end{itemize}
