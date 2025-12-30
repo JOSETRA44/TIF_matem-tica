@@ -430,13 +430,6 @@ INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.t
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT .\anexo.png
-INPUT .\anexo.png
-INPUT .\anexo.png
-INPUT .\anexo.png
-INPUT .\anexo.png
-INPUT .\anexo.png
-INPUT .\anexo.png
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
@@ -457,8 +450,6 @@ INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
-INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb
 INPUT C:\Users\USER\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sftt1095.pfb

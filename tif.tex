@@ -982,206 +982,76 @@ Sydsaeter, K., \& Hammond, P. (2006). \textit{Matemáticas para el Análisis Eco
 
 \niveluno{ANEXOS}
 
-Esta sección complementa el cuerpo principal de la investigación con las bases de datos, tablas de coeficientes y desarrollos matemáticos que fundamentan la metodología y los resultados presentados.
+\niveldosnotoc{Anexo 1: Base de Datos y Fuentes}
 
-\niveldosnotoc{Anexo 1: Matriz Insumo-Producto Nacional (Base)}
-
-\niveltresnotoc{1.1. Fuente y Descripción de la Matriz Base}
-
-Para la construcción del modelo insumo-producto regionalizado, se utiliza como punto de partida la Matriz Insumo-Producto (MIP) de la Economía Peruana del año 2007, publicada por el Instituto Nacional de Estadística e Informática (INEI). Específicamente, se emplea la "Matriz Insumo Producto a Precios de Productor Total 2007 (Valores a precios corrientes)".
-
-La elección de esta matriz, a pesar de su año base, se justifica por ser la última tabla oficial completa y detallada publicada por el INEI, que sirve como referencia estándar para las Cuentas Nacionales del Perú. Diversos estudios académicos y gubernamentales sobre multiplicadores económicos y análisis estructural en el Perú continúan utilizando esta matriz como la base más sólida disponible.
-
-\niveltresnotoc{1.2. Estructura de la Matriz Insumo-Producto}
-
-La MIP es una tabla de doble entrada que registra las transacciones de bienes y servicios entre los distintos sectores productivos de una economía durante un período determinado. Su estructura se divide conceptualmente en tres cuadrantes principales:
-
-\begin{itemize}[leftmargin=*]
-\item \textbf{Cuadrante I (Demanda Intermedia):} Representa los flujos intersectoriales. Las filas muestran las ventas de un sector a otros sectores para ser utilizados como insumos en sus procesos productivos. Las columnas muestran las compras de insumos que un sector realiza a los demás.
-
-\item \textbf{Cuadrante II (Demanda Final):} Detalla el destino final de la producción que no se consume en el proceso productivo. Sus componentes incluyen el Consumo Privado, el Consumo del Gobierno, la Formación Bruta de Capital (Inversión) y las Exportaciones.
-
-\item \textbf{Cuadrante III (Valor Agregado):} Muestra los insumos primarios de cada sector, es decir, la retribución a los factores de producción. Sus componentes son las Remuneraciones de los Empleados, el Excedente Bruto de Explotación (ganancias empresariales, rentas) y Otros Impuestos Netos sobre la Producción.
-\end{itemize}
-
-\vspace{0.5cm}
-
-\niveldosnotoc{Anexo 2: Datos del VAB de Arequipa y Coeficientes de Ubicación}
-
-\niveltresnotoc{2.1. Estructura Productiva de Arequipa (2024)}
-
-Para regionalizar la MIP nacional, es fundamental conocer la estructura productiva del departamento de Arequipa. Se utilizan los datos del Valor Agregado Bruto (VAB) a precios constantes de 2007 para el año 2024, publicados por el Banco Central de Reserva del Perú (BCRP), Sucursal Arequipa.
-
-En 2024, Arequipa representó el 5.9\% del VAB nacional, posicionándose como la segunda economía departamental más importante después de Lima. El sector de Extracción de Petróleo, Gas y Minerales es el pilar de su economía, aportando el 32.2\% del VAB departamental y representando el 14.7\% del VAB minero nacional, lo que la ubica en el primer lugar en esta actividad.
+La investigación utiliza como matriz base la \textbf{Matriz Insumo-Producto (MIP) Total 2007} del INEI, por ser la referencia estándar vigente para cuentas nacionales[cite: 470, 471]. Para la regionalización, se emplean los datos del \textbf{Valor Agregado Bruto (VAB)} de Arequipa proyectados al 2024[cite: 488, 492].
 
 \begin{table}[H]
 \centering
-\caption{Arequipa - Valor Agregado Bruto por Actividad Económica, 2024}
+\caption{VAB de Arequipa por Actividad Económica, 2024}
 \small
-\begin{tabular}{lrrr}
+\begin{tabular}{lrr}
 \toprule
-\textbf{Actividad Económica} & \textbf{VAB} & \textbf{Estructura} & \textbf{Crecimiento} \\
- & \textbf{(Miles S/)} & \textbf{(\%)} & \textbf{2015-2024 (\%)} \\
+\textbf{Actividad Económica} & \textbf{VAB (Miles S/)} & \textbf{Estructura (\%)} \\
 \midrule
-Agricultura, Ganadería, Caza y Silvicultura & 1,682,946 & 5.3 & 0.5 \\
-Pesca y Acuicultura & 32,474 & 0.1 & -5.5 \\
-\textbf{Extracción de Petróleo, Gas y Minerales} & \textbf{10,125,582} & \textbf{32.2} & \textbf{7.9} \\
-Manufactura & 3,276,801 & 10.4 & -1.0 \\
-Electricidad, Gas y Agua & 325,403 & 1.0 & 2.3 \\
-Construcción & 2,529,854 & 8.0 & 1.2 \\
-Comercio & 3,236,853 & 10.3 & 2.0 \\
-Transporte, Almacenamiento, Correo y Mensajería & 1,652,933 & 5.3 & 2.6 \\
-Alojamiento y Restaurantes & 585,172 & 1.9 & 0.5 \\
-Telecomunicaciones y Otros Serv. de Información & 1,417,488 & 4.5 & 5.6 \\
-Administración Pública y Defensa & 1,228,314 & 3.9 & 4.4 \\
-Otros Servicios & 5,364,266 & 17.1 & 2.6 \\
+Agricultura, Ganadería, Caza y Silv. & 1,682,946 & 5.3 \\
+\textbf{Extracción de Petróleo y Minerales} & \textbf{10,125,582} & \textbf{32.2} \\
+Manufactura & 3,276,801 & 10.4 \\
+Electricidad, Gas y Agua & 325,403 & 1.0 \\
+Construcción & 2,529,854 & 8.0 \\
+Comercio & 3,236,853 & 10.3 \\
+Transporte y Comunicaciones & 3,070,421 & 9.8 \\
+Otros Servicios & 7,204,594 & 23.0 \\
 \midrule
-\textbf{Valor Agregado Bruto Total} & \textbf{31,458,086} & \textbf{100.0} & \textbf{3.3} \\
+\textbf{VAB Total} & \textbf{31,458,086} & \textbf{100.0} \\
 \bottomrule
 \end{tabular}
 \end{table}
+\textit{Fuente: Elaboración propia con datos del BCRP e INEI[cite: 493].}
 
-\textit{Fuente: Banco Central de Reserva del Perú, Sucursal Arequipa, con datos del INEI.}
+\vspace{0.3cm}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.85\textwidth]{anexo.png}
-\caption{Distribución porcentual del Valor Agregado Bruto (VAB) por sectores económicos en Arequipa, 2024}
-\label{fig:vab-arequipa}
-\end{figure}
+\niveldosnotoc{Anexo 2: Regionalización y Estabilidad}
 
-\textit{Fuente: Elaboración propia con datos del BCRP (2025).}
-
-\vspace{0.5cm}
-
-\niveltresnotoc{2.2. Cálculo del Coeficiente de Ubicación de Flegg (FLQ)}
-
-El Coeficiente de Ubicación de Flegg (FLQ) es la técnica empleada para regionalizar la matriz nacional. A diferencia del método tradicional, el FLQ permite ajustar los coeficientes técnicos de Arequipa considerando el tamaño relativo de la región respecto al país, evitando la sobreestimación del comercio local.
-
-La fórmula para el Coeficiente de Ubicación basado en el VAB es:
-
-\begin{equation}
-LQ_i = \frac{VAB_{i,r} / VAB_{t,r}}{VAB_{i,n} / VAB_{t,n}}
-\end{equation}
-
-Donde: $LQ_i$ es el Coeficiente de Ubicación para el sector $i$; $VAB_{i,r}$ es el Valor Agregado Bruto del sector $i$ en la región (Arequipa); $VAB_{t,r}$ es el Valor Agregado Bruto total en la región; $VAB_{i,n}$ es el Valor Agregado Bruto del sector $i$ a nivel nacional; $VAB_{t,n}$ es el Valor Agregado Bruto total a nivel nacional (PBI).
+Se aplicó el \textbf{Coeficiente de Ubicación de Flegg (FLQ)} para ajustar la matriz nacional a la estructura de Arequipa[cite: 512, 513].
 
 \begin{table}[H]
 \centering
-\caption{Cálculo del Coeficiente de Ubicación de Flegg (FLQ) para Arequipa, 2024}
-\begin{tabular}{lcccc}
+\caption{Cálculo del Coeficiente de Ubicación (FLQ) y Validación de Estabilidad}
+\small
+\begin{tabular}{lc|lc}
 \toprule
-\textbf{Actividad} & \textbf{Part. Aqp} & \textbf{Part. Nac.} & \textbf{LQ} & \textbf{Interpretación} \\
- & \textbf{(\%)} & \textbf{(\%)} & & \\
+\textbf{Sector (Minería)} & \textbf{Valor} & \textbf{Criterio de Estabilidad} & \textbf{Resultado} \\
 \midrule
-Agricultura, Ganadería & 5.3 & 6.5 & 0.82 & No especializado \\
-Pesca y Acuicultura & 0.1 & 0.6 & 0.17 & No especializado \\
-\textbf{Minería} & \textbf{32.2} & \textbf{12.1} & \textbf{2.66} & \textbf{Alta especialización} \\
-Manufactura & 10.4 & 12.5 & 0.83 & No especializado \\
-Construcción & 8.0 & 6.2 & 1.29 & Especializado \\
-Comercio & 10.3 & 10.8 & 0.95 & No especializado \\
-Otros Servicios & 33.7 & 51.3 & 0.66 & No especializado \\
+Participación Aqp (\%) & 32.2 & Determinante $|I-A|$ & 0.5567 \\
+Participación Nac (\%) & 12.1 & Condición Hawkins-Simon & Cumple \\
+\textbf{LQ Resultante} & \textbf{2.66} & \textbf{Viabilidad del Modelo} & \textbf{SI} \\
 \bottomrule
 \end{tabular}
 \end{table}
+\textit{Fuente: Cálculos propios detallados en el Capítulo IV[cite: 527, 559].}
 
-\textit{Fuente: Elaboración propia con datos del BCRP e INEI.}
+\niveldosnotoc{Anexo 3: Implementación en Scilab}
 
-El resultado del LQ para el sector minero (2.66) confirma la alta especialización de Arequipa en esta actividad, lo que valida el enfoque de este estudio.
-
-\vspace{0.5cm}
-
-\niveldosnotoc{Anexo 3: Desarrollo Matemático Detallado}
-
-\niveltresnotoc{3.1. El Modelo Insumo-Producto de Leontief}
-
-El modelo de Leontief describe las interdependencias entre los diferentes sectores de una economía. La identidad contable fundamental del modelo establece que la producción total de un sector es igual a su demanda intermedia más su demanda final:
-
-\begin{equation}
-X = AX + D
-\end{equation}
-
-Donde \textbf{X} es el vector columna del Valor Bruto de la Producción (VBP) de cada sector; \textbf{D} es el vector columna de la Demanda Final de cada sector; \textbf{A} es la matriz de coeficientes técnicos de producción. Cada elemento $a_{ij}$ de esta matriz se calcula como $a_{ij} = Z_{ij} / X_j$, donde $Z_{ij}$ es el valor de los insumos del sector $i$ utilizados por el sector $j$, y $X_j$ es el VBP del sector $j$.
-
-Para analizar el impacto de cambios en la demanda final sobre la producción total, se despeja el vector X. Este proceso algebraico conduce a la matriz inversa de Leontief.
-
-\textbf{Paso 1:} Reordenar la ecuación fundamental:
-\begin{equation}
-X - AX = D
-\end{equation}
-
-\textbf{Paso 2:} Factorizar el vector de producción X:
-\begin{equation}
-(I - A)X = D
-\end{equation}
-
-Donde \textbf{I} es la matriz identidad. La matriz \textbf{(I - A)} se conoce como la matriz de Leontief.
-
-\textbf{Paso 3:} Despejar X premultiplicando por la inversa de la matriz de Leontief:
-\begin{equation}
-X = (I - A)^{-1} D
-\end{equation}
-
-La matriz $L = (I - A)^{-1}$ es la matriz inversa de Leontief o matriz de requerimientos directos e indirectos. Cada elemento $l_{ij}$ de esta matriz cuantifica el aumento total en la producción del sector $i$ que se necesita, directa e indirectamente, para satisfacer un aumento de una unidad monetaria en la demanda final del sector $j$. Esta matriz es la herramienta central para calcular los multiplicadores de producción, empleo e ingreso.
-
-\niveltresnotoc{3.2. Validación de Estabilidad del Modelo (Condiciones Hawkins-Simon)}
-
-Para garantizar la viabilidad del modelo de 9 sectores, se verifican las condiciones de Hawkins-Simon sobre la matriz ajustada por el método FLQ. Esto asegura que la estructura productiva regional sea capaz de generar valores de producción positivos ante cualquier nivel de demanda final.
-
-\begin{table}[H]
-\centering
-\caption{Validación de Condiciones de Estabilidad del Modelo (9x9)}
-\begin{tabular}{lcc}
-\toprule
-\textbf{Criterio Matemático} & \textbf{Valor Calculado} & \textbf{Estado} \\
-\midrule
-Determinante de Leontief $|I-A|$ & \textbf{0.5567} & $\checkmark$ > 0 (Cumple) \\
-Condición de no-negatividad & Todos $a_{ij} \geq 0$ & $\checkmark$ Positiva (Cumple) \\
-\midrule
-\textbf{Conclusión del Modelo} & \textbf{Solución Única} & \textbf{$\checkmark$ VIABLE} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\textit{Fuente: Elaboración propia basada en los cálculos del Capítulo IV.}
-
-\vspace{0.5cm}
-
-\niveltresnotoc{3.3. Código en Scilab para Cálculos Matriciales}
-
-A continuación se presenta el código utilizado para los cálculos matriciales del modelo:
-
-\begin{lstlisting}[caption={Codigo Scilab para calculos matriciales}]
-// Definicion de la Matriz de Coeficientes Tecnicos A (9x9)
-// El procesamiento matricial de la matriz de 9x9 se realizo en 
-// software externo debido a su extension.
-
-// Matriz A (9 sectores) - Ver Tabla 1 del Capitulo IV
-A = [...]; // Matriz 9x9 de coeficientes tecnicos
-
-// Calculo de la Matriz de Leontief (I-A)
-I = eye(9,9); // Matriz identidad 9x9
+\begin{lstlisting}[caption={Codigo Scilab para calculos del modelo regional}]
+// Definicion de la Matriz A (9x9) y Matriz Identidad I
+A = [...]; 
+I = eye(9,9); 
 Leontief_Matrix = I - A;
 
-// Verificacion del determinante
+// Verificacion de estabilidad y calculo de inversa [cite: 583, 589]
 det_L = det(Leontief_Matrix);
-disp("Determinante de (I-A):");
-disp(det_L);
-
-// Calculo de la Inversa de Leontief
 Leontief_Inverse = inv(Leontief_Matrix);
-disp("Matriz Inversa de Leontief (I-A)^-1:");
-disp(Leontief_Inverse);
 
-// Definicion del shock de demanda final (9 sectores)
-delta_d = zeros(9,1); // Vector de ceros de 9x1
-delta_d(2) = 981.8;    // Shock en Mineria (sector 2)
+// Definicion del shock en Mineria (Sector 2) [cite: 599]
+delta_d = zeros(9,1); 
+delta_d(2) = 981.8; 
 
-// Calculo del impacto en la produccion total
+// Calculo del impacto en la produccion total (delta_X) [cite: 602]
 delta_X = Leontief_Inverse * delta_d;
-disp("Impacto en la Produccion Total (delta_X):");
-disp(delta_X);
+disp("Impacto Total (delta_X):", delta_X);
 \end{lstlisting}
+
 
 % ============================================================================
 % FIN DEL DOCUMENTO

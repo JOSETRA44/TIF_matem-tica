@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.30)  30 DEC 2025 09:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.30)  30 DEC 2025 10:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -710,18 +710,12 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 [21] [22] [23] [24] [25] [26] [27
 
 
-] [28]
-<anexo.png, id=404, 2409.0pt x 1606.0pt>
-File: anexo.png Graphic file (type png)
-<use anexo.png>
-Package pdftex.def Info: anexo.png  used on input line 1048.
-(pdftex.def)             Requested size: 385.02577pt x 256.67119pt.
- [29] [30 <./anexo.png>] [31] [32]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1154.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1154.
+]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1036.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1036.
  (C:\Users\USER\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [33{C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [34] (tif.aux
+) [28{C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (tif.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -733,17 +727,17 @@ Package rerunfilecheck Info: File `tif.out' has not changed.
 (rerunfilecheck)             Checksum: 4526CEDF9A9A93E576EF00C668B1DABE;15222.
  ) 
 Here is how much of TeX's memory you used:
- 16717 strings out of 474479
- 263052 string characters out of 5744062
- 2149542 words of memory out of 5000000
- 38584 multiletter control sequences out of 15000+600000
+ 16677 strings out of 474479
+ 262483 string characters out of 5744062
+ 2044542 words of memory out of 5000000
+ 38570 multiletter control sequences out of 15000+600000
  667773 words of font info for 214 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,16n,79p,1035b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tif.pdf (35 pages, 596973 bytes).
+ 75i,12n,79p,1035b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tif.pdf (29 pages, 456949 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 435 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 430 words of extra memory for PDF output out of 10000 (max. 10000000)
 
