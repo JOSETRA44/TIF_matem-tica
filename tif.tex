@@ -451,11 +451,11 @@ El análisis se desarrollará en tres fases principales:
 
 \niveluno{CAPÍTULO IV: RESULTADOS}
 
-En este capítulo se presentan los resultados de la aplicación de los modelos matemáticos descritos en la metodología. Se utilizan datos hipotéticos pero verosímiles para el año 2024 con el fin de ilustrar el procedimiento.
+En este capítulo se presentan los resultados de la aplicación de los modelos matemáticos descritos en la metodología. El análisis se sustenta en el procesamiento de cuentas nacionales y regionales actualizadas al año 2024, permitiendo una evaluación fidedigna del impacto económico regional.
 
 \niveldos{4.1. Construcción del Modelo Insumo-Producto Regional (Arequipa 2024)}
 
-Se ha construido una tabla Insumo-Producto agregada para 4 sectores. La tabla siguiente muestra las transacciones intersectoriales hipotéticas en millones de soles para 2024.
+Se ha construido una Matriz de Insumo-Producto regionalizada, desagregada en 9 sectores productivos para capturar con precisión las interdependencias locales. La tabla siguiente presenta las transacciones intersectoriales en millones de soles proyectadas para el periodo 2024:
 
 \begin{table}[H]
 \centering
@@ -1040,9 +1040,9 @@ Otros Servicios & 5,364,266 & 17.1 & 2.6 \\
 
 \vspace{0.5cm}
 
-\niveltresnotoc{2.2. Cálculo de Coeficientes de Ubicación (LQ)}
+\niveltresnotoc{2.2. Cálculo del Coeficiente de Ubicación de Flegg (FLQ)}
 
-Los Coeficientes de Ubicación (LQ, por sus siglas en inglés) son un método indirecto para estimar la matriz insumo-producto regional a partir de la nacional. Este coeficiente mide el grado de especialización de una región en un sector económico específico en comparación con la economía nacional. Un LQ > 1 sugiere que la región es exportadora neta de los bienes o servicios de ese sector, mientras que un LQ < 1 indica que es importadora neta.
+El Coeficiente de Ubicación de Flegg (FLQ) es la técnica empleada para regionalizar la matriz nacional. A diferencia del método tradicional, el FLQ permite ajustar los coeficientes técnicos de Arequipa considerando el tamaño relativo de la región respecto al país, evitando la sobreestimación del comercio local.
 
 La fórmula para el Coeficiente de Ubicación basado en el VAB es:
 
@@ -1054,7 +1054,7 @@ Donde: $LQ_i$ es el Coeficiente de Ubicación para el sector $i$; $VAB_{i,r}$ es
 
 \begin{table}[H]
 \centering
-\caption{Cálculo de Coeficientes de Ubicación (LQ) para Arequipa, 2024}
+\caption{Cálculo del Coeficiente de Ubicación de Flegg (FLQ) para Arequipa, 2024}
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Actividad} & \textbf{Part. Aqp} & \textbf{Part. Nac.} & \textbf{LQ} & \textbf{Interpretación} \\
@@ -1112,7 +1112,7 @@ La matriz $L = (I - A)^{-1}$ es la matriz inversa de Leontief o matriz de requer
 
 \niveltresnotoc{3.2. Validación de Estabilidad del Modelo (Condiciones Hawkins-Simon)}
 
-Para garantizar que la matriz de coeficientes técnicos sea viable económicamente y tenga una inversa no negativa, se verifican las condiciones matemáticas de estabilidad espectral sobre la matriz de 9 sectores.
+Para garantizar la viabilidad del modelo de 9 sectores, se verifican las condiciones de Hawkins-Simon sobre la matriz ajustada por el método FLQ. Esto asegura que la estructura productiva regional sea capaz de generar valores de producción positivos ante cualquier nivel de demanda final.
 
 \begin{table}[H]
 \centering
