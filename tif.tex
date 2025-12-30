@@ -984,7 +984,7 @@ Sydsaeter, K., \& Hammond, P. (2006). \textit{Matemáticas para el Análisis Eco
 
 \niveldosnotoc{Anexo 1: Base de Datos y Fuentes}
 
-La investigación utiliza como matriz base la \textbf{Matriz Insumo-Producto (MIP) Total 2007} del INEI, por ser la referencia estándar vigente para cuentas nacionales[cite: 470, 471]. Para la regionalización, se emplean los datos del \textbf{Valor Agregado Bruto (VAB)} de Arequipa proyectados al 2024[cite: 488, 492].
+La investigación utiliza como matriz base la \textbf{Matriz Insumo-Producto (MIP) Total 2007} del INEI, por ser la referencia estándar vigente para cuentas nacionales. Para la regionalización, se emplean los datos del \textbf{Valor Agregado Bruto (VAB)} de Arequipa proyectados al 2024.
 
 \begin{table}[H]
 \centering
@@ -1007,13 +1007,13 @@ Otros Servicios & 7,204,594 & 23.0 \\
 \bottomrule
 \end{tabular}
 \end{table}
-\textit{Fuente: Elaboración propia con datos del BCRP e INEI[cite: 493].}
+\textit{Fuente: Elaboración propia con datos del BCRP e INEI.}
 
 \vspace{0.3cm}
 
 \niveldosnotoc{Anexo 2: Regionalización y Estabilidad}
 
-Se aplicó el \textbf{Coeficiente de Ubicación de Flegg (FLQ)} para ajustar la matriz nacional a la estructura de Arequipa[cite: 512, 513].
+Se aplicó el \textbf{Coeficiente de Ubicación de Flegg (FLQ)} para ajustar la matriz nacional a la estructura de Arequipa.
 
 \begin{table}[H]
 \centering
@@ -1029,7 +1029,7 @@ Participación Nac (\%) & 12.1 & Condición Hawkins-Simon & Cumple \\
 \bottomrule
 \end{tabular}
 \end{table}
-\textit{Fuente: Cálculos propios detallados en el Capítulo IV[cite: 527, 559].}
+\textit{Fuente: Cálculos propios detallados en el Capítulo IV.}
 
 \niveldosnotoc{Anexo 3: Implementación en Scilab}
 
@@ -1039,15 +1039,15 @@ A = [...];
 I = eye(9,9); 
 Leontief_Matrix = I - A;
 
-// Verificacion de estabilidad y calculo de inversa [cite: 583, 589]
+// Verificacion de estabilidad y calculo de inversa
 det_L = det(Leontief_Matrix);
 Leontief_Inverse = inv(Leontief_Matrix);
 
-// Definicion del shock en Mineria (Sector 2) [cite: 599]
+// Definicion del shock en Mineria (Sector 2)
 delta_d = zeros(9,1); 
 delta_d(2) = 981.8; 
 
-// Calculo del impacto en la produccion total (delta_X) [cite: 602]
+// Calculo del impacto en la produccion total (delta_X)
 delta_X = Leontief_Inverse * delta_d;
 disp("Impacto Total (delta_X):", delta_X);
 \end{lstlisting}
